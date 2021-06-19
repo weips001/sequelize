@@ -1,0 +1,504 @@
+2021-06-18 14:46:49,470 INFO 14156 [egg-sequelize](14ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 14:47:06,020 INFO 13484 [egg-sequelize](14ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 14:47:22,383 INFO 12928 [egg-sequelize](16ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 14:48:04,464 INFO 10556 [egg-sequelize](33ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 14:48:21,211 INFO 14052 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 14:48:25,654 INFO 14052 [egg-sequelize](4ms) Executed (default): SELECT count(*) AS `count` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%';
+2021-06-18 14:48:25,660 INFO 14052 [egg-sequelize](5ms) Executed (default): SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%' ORDER BY `user`.`created_at` DESC;
+2021-06-18 14:49:46,249 ERROR 14052 [-/127.0.0.1/-/62ms POST /company] nodejs.SequelizeValidationError: notNull Violation: 姓名必須填寫,
+notNull Violation: user.birthday cannot be null
+notNull Violation: user.birthday cannot be null
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:38:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"姓名必須填寫","type":"notNull Violation","path":"name","value":null,"origin":"CORE","instance":{"id":"5ebbbc47c4e74c83ab7179b7a7721490","address":"鄭州市二七區","email":"350889240@qq.com","updatedAt":"2021-06-18T06:49:46.239Z","createdAt":"2021-06-18T06:49:46.239Z"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"user.birthday cannot be null","type":"notNull Violation","path":"birthday","value":null,"origin":"CORE","instance":{"id":"5ebbbc47c4e74c83ab7179b7a7721490","address":"鄭州市二七區","email":"350889240@qq.com","updatedAt":"2021-06-18T06:49:46.239Z","createdAt":"2021-06-18T06:49:46.239Z"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 14052
+hostname: IT-C20111420Z
+
+2021-06-18 14:50:03,372 INFO 12300 [egg-sequelize](15ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 14:50:56,773 INFO 13364 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 14:50:56,932 ERROR 13364 [-/127.0.0.1/-/39ms POST /company] nodejs.TypeError: Cannot read property 'create' of undefined
+    at CompService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\company.js:20:45)
+    at CompController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:38:42)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+
+pid: 13364
+hostname: IT-C20111420Z
+
+2021-06-18 14:51:04,426 ERROR 13364 [-/127.0.0.1/-/4ms POST /company] nodejs.TypeError: Cannot read property 'create' of undefined
+    at CompService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\company.js:20:45)
+    at CompController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:38:42)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+
+pid: 13364
+hostname: IT-C20111420Z
+
+2021-06-18 14:51:25,965 INFO 12644 [egg-sequelize](15ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 14:51:30,416 INFO 12644 [egg-sequelize](49ms) Executed (default): INSERT INTO `company` (`id`,`comp_name`,`address`,`email`,`status`,`created_at`,`updated_at`) VALUES (?,?,?,?,?,?,?);
+2021-06-18 14:51:31,108 INFO 12228 [egg-sequelize](14ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 14:51:45,265 INFO 12228 [egg-sequelize](12ms) Executed (default): INSERT INTO `user` (`id`,`name`,`age`,`sex`,`birthday`,`created_at`,`updated_at`) VALUES (?,?,?,?,?,?,?);
+2021-06-18 14:51:45,279 ERROR 12228 [-/127.0.0.1/-/73ms POST /user] nodejs.SequelizeDatabaseError: Field 'comp_id' doesn't have a default value
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:38:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_DEFAULT_FOR_FIELD","errno":1364,"sqlState":"HY000","sqlMessage":"Field 'comp_id' doesn't have a default value","sql":"INSERT INTO `user` (`id`,`name`,`age`,`sex`,`birthday`,`created_at`,`updated_at`) VALUES (?,?,?,?,?,?,?);","parameters":["7e4e51b9d3e4421ea85819d997a503ac","張三丰",25,"1","2020-06-15 08:00:00","2021-06-18 14:51:45","2021-06-18 14:51:45"]}
+original: {"code":"ER_NO_DEFAULT_FOR_FIELD","errno":1364,"sqlState":"HY000","sqlMessage":"Field 'comp_id' doesn't have a default value","sql":"INSERT INTO `user` (`id`,`name`,`age`,`sex`,`birthday`,`created_at`,`updated_at`) VALUES (?,?,?,?,?,?,?);","parameters":["7e4e51b9d3e4421ea85819d997a503ac","張三丰",25,"1","2020-06-15 08:00:00","2021-06-18 14:51:45","2021-06-18 14:51:45"]}
+sql: "INSERT INTO `user` (`id`,`name`,`age`,`sex`,`birthday`,`created_at`,`updated_at`) VALUES (?,?,?,?,?,?,?);"
+parameters: ["7e4e51b9d3e4421ea85819d997a503ac","張三丰",25,"1","2020-06-15 08:00:00","2021-06-18 14:51:45","2021-06-18 14:51:45"]
+pid: 12228
+hostname: IT-C20111420Z
+
+2021-06-18 14:52:59,851 WARN 12228 [-/127.0.0.1/-/3ms POST /user] nodejs.SyntaxError: Unexpected token } in JSON at position 95, check bodyParser config
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\H2103671\Desktop\node\sequelize\node_modules\co-body\lib\json.js:57:17)
+    at AsyncFunction.module.exports [as json] (C:\Users\H2103671\Desktop\node\sequelize\node_modules\co-body\lib\json.js:41:20)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async parseBody (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-bodyparser\index.js:100:14)
+    at async bodyParser (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-bodyparser\index.js:85:19)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg\app\middleware\meta.js:17:5)
+status: 400
+body: "{\r\n    \"name\": \"張三丰\",\r\n    \"age\": 25,\r\n    \"birthday\": \"2020-06-15\",\r\n    \"sex\": \"1\",\r\n    \"\"\r\n}"
+pid: 12228
+hostname: IT-C20111420Z
+
+2021-06-18 14:52:59,984 INFO 14184 [egg-sequelize](32ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 14:53:04,366 WARN 14184 [-/127.0.0.1/-/64ms POST /user] nodejs.SyntaxError: Unexpected token } in JSON at position 95, check bodyParser config
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\H2103671\Desktop\node\sequelize\node_modules\co-body\lib\json.js:57:17)
+    at AsyncFunction.module.exports [as json] (C:\Users\H2103671\Desktop\node\sequelize\node_modules\co-body\lib\json.js:41:20)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async parseBody (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-bodyparser\index.js:100:14)
+    at async bodyParser (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-bodyparser\index.js:85:19)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg\app\middleware\meta.js:17:5)
+status: 400
+body: "{\r\n    \"name\": \"張三丰\",\r\n    \"age\": 25,\r\n    \"birthday\": \"2020-06-15\",\r\n    \"sex\": \"1\",\r\n    \"\"\r\n}"
+pid: 14184
+hostname: IT-C20111420Z
+
+2021-06-18 14:53:49,963 ERROR 14184 [-/127.0.0.1/-/10ms POST /user] nodejs.SequelizeValidationError: notNull Violation: user.compId cannot be null
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:38:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"user.compId cannot be null","type":"notNull Violation","path":"compId","value":null,"origin":"CORE","instance":{"id":"d500492916644bb6b1fd14d63200f660","name":"張三丰","age":25,"birthday":"2020-06-15T00:00:00.000Z","sex":"1","updatedAt":"2021-06-18T06:53:49.956Z","createdAt":"2021-06-18T06:53:49.956Z"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 14184
+hostname: IT-C20111420Z
+
+2021-06-18 14:54:11,738 INFO 14184 [egg-sequelize](65ms) Executed (default): INSERT INTO `user` (`id`,`name`,`age`,`sex`,`comp_id`,`birthday`,`created_at`,`updated_at`) VALUES (?,?,?,?,?,?,?,?);
+2021-06-18 14:54:20,713 INFO 14184 [egg-sequelize](9ms) Executed (default): SELECT count(*) AS `count` FROM `company` AS `company` WHERE `company`.`name` LIKE '%%';
+2021-06-18 14:54:20,716 ERROR 14184 [-/127.0.0.1/-/19ms GET /company] nodejs.SequelizeDatabaseError: Unknown column 'company.name' in 'where clause'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.rawSelect (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:995:18)
+    at async Function.aggregate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1986:19)
+    at async Function.count (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2037:12)
+    at async Promise.all (index 0)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async CompService.list (C:\Users\H2103671\Desktop\node\sequelize\app\service\company.js:10:29)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'company.name' in 'where clause'","sql":"SELECT count(*) AS `count` FROM `company` AS `company` WHERE `company`.`name` LIKE '%%';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'company.name' in 'where clause'","sql":"SELECT count(*) AS `count` FROM `company` AS `company` WHERE `company`.`name` LIKE '%%';"}
+sql: "SELECT count(*) AS `count` FROM `company` AS `company` WHERE `company`.`name` LIKE '%%';"
+parameters: undefined
+pid: 14184
+hostname: IT-C20111420Z
+
+2021-06-18 14:54:20,728 INFO 14184 [egg-sequelize](14ms) Executed (default): SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` WHERE `company`.`name` LIKE '%%' ORDER BY `company`.`created_at` DESC;
+2021-06-18 14:54:27,190 INFO 14184 [egg-sequelize](2ms) Executed (default): SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` WHERE `company`.`name` LIKE '%%' ORDER BY `company`.`created_at` DESC;
+2021-06-18 14:54:27,195 ERROR 14184 [-/127.0.0.1/-/9ms GET /company] nodejs.SequelizeDatabaseError: Unknown column 'company.name' in 'where clause'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async CompService.list (C:\Users\H2103671\Desktop\node\sequelize\app\service\company.js:10:29)
+    at async CompController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:26:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'company.name' in 'where clause'","sql":"SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` WHERE `company`.`name` LIKE '%%' ORDER BY `company`.`created_at` DESC;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'company.name' in 'where clause'","sql":"SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` WHERE `company`.`name` LIKE '%%' ORDER BY `company`.`created_at` DESC;"}
+sql: "SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` WHERE `company`.`name` LIKE '%%' ORDER BY `company`.`created_at` DESC;"
+parameters: undefined
+pid: 14184
+hostname: IT-C20111420Z
+
+2021-06-18 14:54:27,204 INFO 14184 [egg-sequelize](17ms) Executed (default): SELECT count(*) AS `count` FROM `company` AS `company` WHERE `company`.`name` LIKE '%%';
+2021-06-18 14:58:51,560 INFO 14184 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `company` AS `company` WHERE `company`.`name` LIKE '%%';
+2021-06-18 14:58:51,567 ERROR 14184 [-/127.0.0.1/-/20ms GET /company] nodejs.SequelizeDatabaseError: Unknown column 'company.name' in 'where clause'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.rawSelect (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:995:18)
+    at async Function.aggregate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1986:19)
+    at async Function.count (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2037:12)
+    at async Promise.all (index 0)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async CompService.list (C:\Users\H2103671\Desktop\node\sequelize\app\service\company.js:10:29)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'company.name' in 'where clause'","sql":"SELECT count(*) AS `count` FROM `company` AS `company` WHERE `company`.`name` LIKE '%%';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'company.name' in 'where clause'","sql":"SELECT count(*) AS `count` FROM `company` AS `company` WHERE `company`.`name` LIKE '%%';"}
+sql: "SELECT count(*) AS `count` FROM `company` AS `company` WHERE `company`.`name` LIKE '%%';"
+parameters: undefined
+pid: 14184
+hostname: IT-C20111420Z
+
+2021-06-18 14:58:51,600 INFO 14184 [egg-sequelize](36ms) Executed (default): SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` WHERE `company`.`name` LIKE '%%' ORDER BY `company`.`created_at` DESC;
+2021-06-18 14:58:52,617 INFO 10228 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 14:58:53,191 INFO 10228 [egg-sequelize](3ms) Executed (default): SELECT count(*) AS `count` FROM `company` AS `company`;
+2021-06-18 14:58:53,197 INFO 10228 [egg-sequelize](3ms) Executed (default): SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` ORDER BY `company`.`created_at` DESC;
+2021-06-18 15:03:11,638 INFO 10228 [egg-sequelize](9ms) Executed (default): INSERT INTO `user` (`id`,`name`,`age`,`sex`,`comp_id`,`birthday`,`created_at`,`updated_at`) VALUES (?,?,?,?,?,?,?,?);
+2021-06-18 15:33:09,031 ERROR 10228 [-/127.0.0.1/-/2ms GET /company/6fe83469afef48a49bb1194dbcc77732] nodejs.TypeError: Cannot read property 'findByPk' of undefined
+    at CompController.show (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:31:40)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+
+pid: 10228
+hostname: IT-C20111420Z
+
+2021-06-18 15:33:36,283 ERROR 10228 [-/127.0.0.1/-/2ms GET /company/6fe83469afef48a49bb1194dbcc77732] nodejs.TypeError: Cannot read property 'findByPk' of undefined
+    at CompController.show (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:31:40)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+
+pid: 10228
+hostname: IT-C20111420Z
+
+2021-06-18 15:33:36,544 INFO 80 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:34:18,359 INFO 14952 [egg-sequelize](48ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:38:05,493 INFO 11108 [egg-sequelize](15ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:40:36,991 INFO 14540 [egg-sequelize](80ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:40:49,967 INFO 13676 [egg-sequelize](17ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:41:34,756 INFO 14332 [egg-sequelize](13ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:42:21,195 INFO 14836 [egg-sequelize](16ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:42:24,191 ERROR 14836 [-/127.0.0.1/-/6ms GET /company/6fe83469afef48a49bb1194dbcc77732] nodejs.TypeError: Cannot read property 'options' of undefined
+    at query (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:512:25)
+    at CompController.show (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:32:23)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+
+pid: 14836
+hostname: IT-C20111420Z
+
+2021-06-18 15:42:27,466 ERROR 14836 [-/127.0.0.1/-/2ms GET /company/6fe83469afef48a49bb1194dbcc77732] nodejs.TypeError: Cannot read property 'options' of undefined
+    at query (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:512:25)
+    at CompController.show (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:32:23)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+
+pid: 14836
+hostname: IT-C20111420Z
+
+2021-06-18 15:42:48,233 INFO 15120 [egg-sequelize](23ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:42:50,235 ERROR 15120 [-/127.0.0.1/-/6ms GET /company/6fe83469afef48a49bb1194dbcc77732] nodejs.TypeError: Cannot read property 'options' of undefined
+    at query (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:512:25)
+    at CompController.show (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:32:23)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+
+pid: 15120
+hostname: IT-C20111420Z
+
+2021-06-18 15:43:09,166 INFO 8012 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:43:10,175 ERROR 8012 [-/127.0.0.1/-/6ms GET /company/6fe83469afef48a49bb1194dbcc77732] nodejs.TypeError: Cannot read property 'options' of undefined
+    at query (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:512:25)
+    at CompController.show (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:32:23)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+
+pid: 8012
+hostname: IT-C20111420Z
+
+2021-06-18 15:44:18,596 ERROR 8012 [-/127.0.0.1/-/2ms GET /company/6fe83469afef48a49bb1194dbcc77732] nodejs.TypeError: Cannot read property 'options' of undefined
+    at query (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:512:25)
+    at CompController.show (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:32:23)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+
+pid: 8012
+hostname: IT-C20111420Z
+
+2021-06-18 15:45:59,794 INFO 13780 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:46:03,272 ERROR 13780 [-/127.0.0.1/-/6ms GET /company/6fe83469afef48a49bb1194dbcc77732] nodejs.TypeError: Cannot read property 'options' of undefined
+    at query (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:512:25)
+    at CompController.show (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:32:23)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+
+pid: 13780
+hostname: IT-C20111420Z
+
+2021-06-18 15:46:38,413 ERROR 13780 [-/127.0.0.1/-/2ms GET /company/6fe83469afef48a49bb1194dbcc77732] nodejs.TypeError: Cannot read property 'options' of undefined
+    at query (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:512:25)
+    at CompController.show (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:32:23)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+
+pid: 13780
+hostname: IT-C20111420Z
+
+2021-06-18 15:46:39,632 INFO 12748 [egg-sequelize](20ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:46:42,503 ERROR 12748 [-/127.0.0.1/-/7ms GET /company/6fe83469afef48a49bb1194dbcc77732] nodejs.TypeError: Cannot read property 'options' of undefined
+    at query (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:512:25)
+    at CompController.show (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:33:23)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+
+pid: 12748
+hostname: IT-C20111420Z
+
+2021-06-18 15:49:04,192 INFO 8960 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:50:07,839 INFO 13316 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:51:04,077 INFO 14180 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:51:16,665 INFO 14180 [egg-sequelize](6ms) Executed (default): SELECT * FROM `user`
+2021-06-18 15:51:51,168 INFO 12836 [egg-sequelize](17ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:52:19,747 INFO 7948 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:52:27,932 INFO 7948 [egg-sequelize](7ms) Executed (default): SELECT * FROM `user`
+2021-06-18 15:55:35,679 INFO 2384 [egg-sequelize](23ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:55:39,053 INFO 2384 [egg-sequelize](5ms) Executed (default): SELECT * FROM `user`
+2021-06-18 15:55:47,417 INFO 13160 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 15:55:49,900 INFO 13160 [egg-sequelize](19ms) Executed (default): SELECT * FROM `user`
+2021-06-18 16:13:12,701 INFO 12988 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 16:20:41,559 INFO 1204 [egg-sequelize](15ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 16:24:17,247 INFO 11920 [egg-sequelize](15ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 16:24:23,753 ERROR 11920 [-/127.0.0.1/-/66ms POST /company] nodejs.ReferenceError: checkCompName is not defined
+    at CompService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\company.js:33:21)
+    at CompController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:44:42)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+
+pid: 11920
+hostname: IT-C20111420Z
+
+2021-06-18 16:24:38,101 INFO 14948 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 16:24:42,848 ERROR 14948 [-/127.0.0.1/-/29ms POST /company] nodejs.ReferenceError: ctx is not defined
+    at CompService.checkCompName (C:\Users\H2103671\Desktop\node\sequelize\app\service\company.js:19:21)
+    at CompService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\company.js:33:32)
+    at CompController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:44:42)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+
+pid: 14948
+hostname: IT-C20111420Z
+
+2021-06-18 16:24:57,595 INFO 13784 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 16:26:13,789 INFO 15004 [egg-sequelize](15ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 16:26:16,365 INFO 15004 [egg-sequelize](3ms) Executed (default): SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` WHERE `company`.`comp_name` = '我的公司' LIMIT 1;
+2021-06-18 16:27:12,150 INFO 15004 [egg-sequelize](10ms) Executed (default): SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` WHERE `company`.`comp_name` = '我的公司1111' LIMIT 1;
+2021-06-18 16:27:20,047 ERROR 15004 [-/127.0.0.1/-/7974ms POST /company] nodejs.TypeError: Cannot read property 'id' of null
+    at CompService.checkCompName (C:\Users\H2103671\Desktop\node\sequelize\app\service\company.js:24:16)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async CompService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\company.js:34:21)
+    at async CompController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:44:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-session\index.js:41:7)
+
+pid: 15004
+hostname: IT-C20111420Z
+
+2021-06-18 16:27:55,721 INFO 10912 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 16:27:57,928 INFO 10912 [egg-sequelize](3ms) Executed (default): SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` WHERE `company`.`comp_name` = '我的公司1111' LIMIT 1;
+2021-06-18 16:27:57,954 INFO 10912 [egg-sequelize](9ms) Executed (default): INSERT INTO `company` (`id`,`comp_name`,`address`,`email`,`status`,`created_at`,`updated_at`) VALUES (?,?,?,?,?,?,?);
+2021-06-18 16:29:50,705 INFO 12356 [egg-sequelize](18ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 16:43:13,054 INFO 16216 [egg-sequelize](16ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 16:44:47,574 INFO 1720 [egg-sequelize](17ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 16:44:50,428 INFO 1720 [egg-sequelize](26ms) Executed (223d1739-db99-4a4c-8b57-4e9389a99db2): START TRANSACTION;
+2021-06-18 16:44:50,473 INFO 1720 [egg-sequelize](27ms) Executed (223d1739-db99-4a4c-8b57-4e9389a99db2): SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` WHERE `company`.`comp_name` = '我的公司2222' LIMIT 1;
+2021-06-18 16:44:50,502 INFO 1720 [egg-sequelize](22ms) Executed (223d1739-db99-4a4c-8b57-4e9389a99db2): COMMIT;
+2021-06-18 16:44:50,511 ERROR 1720 [-/127.0.0.1/-/129ms POST /company] nodejs.SequelizeValidationError: Validation error: 必須是郵箱格式
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async Function.findOrCreate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2319:25)
+    at async CompService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\company.js:43:21)
+    at async CompController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:44:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+name: "SequelizeValidationError"
+errors: [{"message":"必須是郵箱格式","type":"Validation error","path":"email","value":"350889240","origin":"FUNCTION","instance":{"id":"133a2d1f71ce4a6299881d6811dfd74f","status":"0","compName":"我的公司2222","address":"鄭州市二七區","email":"350889240","updatedAt":"2021-06-18T08:44:50.476Z","createdAt":"2021-06-18T08:44:50.476Z"},"validatorKey":"isEmail","validatorName":"isEmail","validatorArgs":[{"msg":"必須是郵箱格式","allow_display_name":false,"require_display_name":false,"allow_utf8_local_part":true,"require_tld":true}],"original":{"validatorName":"isEmail","validatorArgs":"~0~validatorArgs"}}]
+pid: 1720
+hostname: IT-C20111420Z
+
+2021-06-18 17:00:21,505 INFO 15648 [egg-sequelize](20ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 17:00:30,388 INFO 15648 [egg-sequelize](33ms) Executed (default): SELECT * FROM `user`
+2021-06-18 17:00:47,154 ERROR 15648 [-/127.0.0.1/-/3ms POST /company/test] nodejs.TypeError: Cannot read property 'findAll' of undefined
+    at CompController.test (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:76:50)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\node_modules\koa-compose\index.js:36:12
+
+pid: 15648
+hostname: IT-C20111420Z
+
+2021-06-18 17:01:18,062 INFO 9760 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 17:01:20,857 INFO 9760 [egg-sequelize](3ms) Executed (default): SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` GROUP BY `comp_name`;
+2021-06-18 17:01:20,862 ERROR 9760 [-/127.0.0.1/-/14ms POST /company/test] nodejs.SequelizeDatabaseError: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'wps.company.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async CompController.test (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:76:21)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_WRONG_FIELD_WITH_GROUP","errno":1055,"sqlState":"42000","sqlMessage":"Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'wps.company.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by","sql":"SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` GROUP BY `comp_name`;"}
+original: {"code":"ER_WRONG_FIELD_WITH_GROUP","errno":1055,"sqlState":"42000","sqlMessage":"Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'wps.company.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by","sql":"SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` GROUP BY `comp_name`;"}
+sql: "SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` GROUP BY `comp_name`;"
+parameters: undefined
+pid: 9760
+hostname: IT-C20111420Z
+
+2021-06-18 17:03:11,835 INFO 16260 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2021-06-18 17:03:16,507 INFO 16260 [egg-sequelize](3ms) Executed (default): SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` GROUP BY `comp_name`;
+2021-06-18 17:03:16,512 ERROR 16260 [-/127.0.0.1/-/14ms POST /company/test] nodejs.SequelizeDatabaseError: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'wps.company.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async CompController.test (C:\Users\H2103671\Desktop\node\sequelize\app\controller\company.js:76:17)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_WRONG_FIELD_WITH_GROUP","errno":1055,"sqlState":"42000","sqlMessage":"Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'wps.company.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by","sql":"SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` GROUP BY `comp_name`;"}
+original: {"code":"ER_WRONG_FIELD_WITH_GROUP","errno":1055,"sqlState":"42000","sqlMessage":"Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'wps.company.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by","sql":"SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` GROUP BY `comp_name`;"}
+sql: "SELECT `id`, `comp_name` AS `compName`, `address`, `email`, `status`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `company` AS `company` GROUP BY `comp_name`;"
+parameters: undefined
+pid: 16260
+hostname: IT-C20111420Z
+

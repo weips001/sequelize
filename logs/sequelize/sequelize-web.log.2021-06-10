@@ -1,0 +1,953 @@
+2021-06-10 11:56:48,108 INFO 5436 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 11:56:48,151 INFO 5436 [egg-sequelize](8ms) Executed (default): INSERT INTO `users` (`id`,`name`,`age`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?);
+2021-06-10 11:56:48,155 INFO 5436 [egg-sequelize](6ms) Executed (default): INSERT INTO `users` (`id`,`name`,`age`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?);
+2021-06-10 11:56:48,157 INFO 5436 [egg-sequelize](5ms) Executed (default): INSERT INTO `users` (`id`,`name`,`age`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?);
+2021-06-10 11:56:48,178 INFO 5436 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 2;
+2021-06-10 11:56:48,191 INFO 5436 [egg-sequelize](4ms) Executed (default): INSERT INTO `users` (`id`,`name`,`age`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?);
+2021-06-10 11:56:48,198 INFO 5436 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 40;
+2021-06-10 11:56:48,270 INFO 5436 [egg-sequelize](7ms) Executed (default): INSERT INTO `users` (`id`,`name`,`age`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?);
+2021-06-10 11:56:48,275 INFO 5436 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 41;
+2021-06-10 11:56:48,282 INFO 5436 [egg-sequelize](4ms) Executed (default): INSERT INTO `users` (`id`,`name`,`age`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?);
+2021-06-10 11:56:48,286 INFO 5436 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 42;
+2021-06-10 11:56:48,291 INFO 5436 [egg-sequelize](4ms) Executed (default): DELETE FROM `users` WHERE `id` = 42
+2021-06-10 15:01:48,357 INFO 17384 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:02:56,351 INFO 17384 [egg-sequelize](6ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2021-06-10 15:07:38,096 INFO 17328 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:16:29,246 INFO 9676 [egg-sequelize](19ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:20:02,091 INFO 16896 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:23:08,897 INFO 15580 [egg-sequelize](18ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:23:14,967 INFO 8888 [egg-sequelize](20ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:24:27,114 INFO 13220 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:24:30,903 INFO 13220 [egg-sequelize](5ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2021-06-10 15:24:30,910 INFO 13220 [egg-sequelize](6ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2021-06-10 15:25:28,570 INFO 16368 [egg-sequelize](12ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:26:44,661 INFO 3216 [egg-sequelize](18ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:26:49,603 INFO 6760 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:27:10,431 INFO 11644 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:27:10,620 ERROR 11644 [-/127.0.0.1/-/7ms GET /users] nodejs.TypeError: ctx.model.User.findAndCountAll1 is not a function
+    at UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:38)
+    at UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+
+pid: 11644
+hostname: IT-C20111420Z
+
+2021-06-10 15:27:53,989 INFO 8616 [egg-sequelize](13ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:28:11,364 INFO 11520 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:28:11,725 INFO 11520 [egg-sequelize](14ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2021-06-10 15:28:11,754 INFO 11520 [egg-sequelize](17ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';
+2021-06-10 15:28:11,761 ERROR 11520 [-/127.0.0.1/-/65ms GET /users] nodejs.SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' at line 1
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:17)
+    at async UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' at line 1","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';"}
+original: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' at line 1","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';"}
+sql: "SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';"
+parameters: undefined
+pid: 11520
+hostname: IT-C20111420Z
+
+2021-06-10 15:29:02,186 INFO 11520 [egg-sequelize](4ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2021-06-10 15:29:02,194 INFO 11520 [egg-sequelize](6ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';
+2021-06-10 15:29:02,198 ERROR 11520 [-/127.0.0.1/-/35ms GET /users] nodejs.SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' at line 1
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:17)
+    at async UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' at line 1","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';"}
+original: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' at line 1","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';"}
+sql: "SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';"
+parameters: undefined
+pid: 11520
+hostname: IT-C20111420Z
+
+2021-06-10 15:30:01,357 INFO 11520 [egg-sequelize](10ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2021-06-10 15:30:01,359 INFO 11520 [egg-sequelize](11ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';
+2021-06-10 15:30:01,367 ERROR 11520 [-/127.0.0.1/-/51ms GET /users] nodejs.SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' at line 1
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:17)
+    at async UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' at line 1","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';"}
+original: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' at line 1","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';"}
+sql: "SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';"
+parameters: undefined
+pid: 11520
+hostname: IT-C20111420Z
+
+2021-06-10 15:30:14,052 INFO 11520 [egg-sequelize](16ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';
+2021-06-10 15:30:14,056 ERROR 11520 [-/127.0.0.1/-/66ms GET /users] nodejs.SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' at line 1
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:17)
+    at async UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' at line 1","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';"}
+original: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' at line 1","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';"}
+sql: "SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';"
+parameters: undefined
+pid: 11520
+hostname: IT-C20111420Z
+
+2021-06-10 15:30:14,068 INFO 11520 [egg-sequelize](33ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2021-06-10 15:30:15,053 INFO 11520 [egg-sequelize](13ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';
+2021-06-10 15:30:15,056 ERROR 11520 [-/127.0.0.1/-/15ms GET /users] nodejs.SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' at line 1
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:17)
+    at async UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' at line 1","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';"}
+original: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' at line 1","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';"}
+sql: "SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT '5';"
+parameters: undefined
+pid: 11520
+hostname: IT-C20111420Z
+
+2021-06-10 15:30:15,068 INFO 11520 [egg-sequelize](29ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2021-06-10 15:30:15,555 INFO 17284 [egg-sequelize](13ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:30:15,711 INFO 17284 [egg-sequelize](11ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2021-06-10 15:30:15,723 INFO 17284 [egg-sequelize](11ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 5;
+2021-06-10 15:30:16,587 INFO 17284 [egg-sequelize](12ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2021-06-10 15:30:16,588 INFO 17284 [egg-sequelize](13ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 5;
+2021-06-10 15:32:00,407 INFO 12196 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:32:33,264 INFO 3864 [egg-sequelize](13ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:33:07,229 INFO 16292 [egg-sequelize](24ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:33:35,293 INFO 8220 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:33:53,285 INFO 13228 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:34:19,519 INFO 9116 [egg-sequelize](16ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:34:34,543 INFO 14444 [egg-sequelize](40ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:34:36,363 INFO 14444 [egg-sequelize](43ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2021-06-10 15:34:36,386 INFO 14444 [egg-sequelize](22ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 5;
+2021-06-10 15:37:56,577 INFO 14444 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2021-06-10 15:37:56,581 INFO 14444 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 5;
+2021-06-10 15:54:49,172 INFO 4396 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 15:54:57,936 INFO 9180 [egg-sequelize](14ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:16:31,505 INFO 7900 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:16:32,549 ERROR 7900 [-/127.0.0.1/-/6ms GET /users] nodejs.TypeError: Cannot destructure property 'Op' of 'ctx.sequelize' as it is undefined.
+    at UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:13)
+    at UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+
+pid: 7900
+hostname: IT-C20111420Z
+
+2021-06-10 16:24:01,209 ERROR 7900 [-/127.0.0.1/-/2ms GET /users] nodejs.TypeError: Cannot destructure property 'Op' of 'ctx.sequelize' as it is undefined.
+    at UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:13)
+    at UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+
+pid: 7900
+hostname: IT-C20111420Z
+
+2021-06-10 16:24:02,261 ERROR 7900 [-/127.0.0.1/-/0ms GET /users] nodejs.TypeError: Cannot destructure property 'Op' of 'ctx.sequelize' as it is undefined.
+    at UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:13)
+    at UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+
+pid: 7900
+hostname: IT-C20111420Z
+
+2021-06-10 16:24:02,961 ERROR 7900 [-/127.0.0.1/-/0ms GET /users] nodejs.TypeError: Cannot destructure property 'Op' of 'ctx.sequelize' as it is undefined.
+    at UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:13)
+    at UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+
+pid: 7900
+hostname: IT-C20111420Z
+
+2021-06-10 16:24:03,644 ERROR 7900 [-/127.0.0.1/-/1ms GET /users] nodejs.TypeError: Cannot destructure property 'Op' of 'ctx.sequelize' as it is undefined.
+    at UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:13)
+    at UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+
+pid: 7900
+hostname: IT-C20111420Z
+
+2021-06-10 16:24:04,268 ERROR 7900 [-/127.0.0.1/-/0ms GET /users] nodejs.TypeError: Cannot destructure property 'Op' of 'ctx.sequelize' as it is undefined.
+    at UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:13)
+    at UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+
+pid: 7900
+hostname: IT-C20111420Z
+
+2021-06-10 16:24:05,023 INFO 10076 [egg-sequelize](16ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:24:05,294 ERROR 10076 [-/127.0.0.1/-/6ms GET /users] nodejs.TypeError: Cannot destructure property 'Op' of 'ctx.Sequelize' as it is undefined.
+    at UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:13)
+    at UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+
+pid: 10076
+hostname: IT-C20111420Z
+
+2021-06-10 16:24:05,683 ERROR 10076 [-/127.0.0.1/-/1ms GET /users] nodejs.TypeError: Cannot destructure property 'Op' of 'ctx.Sequelize' as it is undefined.
+    at UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:13)
+    at UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+
+pid: 10076
+hostname: IT-C20111420Z
+
+2021-06-10 16:24:06,065 ERROR 10076 [-/127.0.0.1/-/1ms GET /users] nodejs.TypeError: Cannot destructure property 'Op' of 'ctx.Sequelize' as it is undefined.
+    at UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:13)
+    at UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+
+pid: 10076
+hostname: IT-C20111420Z
+
+2021-06-10 16:24:06,315 ERROR 10076 [-/127.0.0.1/-/1ms GET /users] nodejs.TypeError: Cannot destructure property 'Op' of 'ctx.Sequelize' as it is undefined.
+    at UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:13)
+    at UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+
+pid: 10076
+hostname: IT-C20111420Z
+
+2021-06-10 16:24:06,506 ERROR 10076 [-/127.0.0.1/-/0ms GET /users] nodejs.TypeError: Cannot destructure property 'Op' of 'ctx.Sequelize' as it is undefined.
+    at UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:13)
+    at UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+
+pid: 10076
+hostname: IT-C20111420Z
+
+2021-06-10 16:24:06,662 ERROR 10076 [-/127.0.0.1/-/0ms GET /users] nodejs.TypeError: Cannot destructure property 'Op' of 'ctx.Sequelize' as it is undefined.
+    at UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:13)
+    at UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+
+pid: 10076
+hostname: IT-C20111420Z
+
+2021-06-10 16:24:06,838 ERROR 10076 [-/127.0.0.1/-/1ms GET /users] nodejs.TypeError: Cannot destructure property 'Op' of 'ctx.Sequelize' as it is undefined.
+    at UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:13)
+    at UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+
+pid: 10076
+hostname: IT-C20111420Z
+
+2021-06-10 16:24:06,981 ERROR 10076 [-/127.0.0.1/-/0ms GET /users] nodejs.TypeError: Cannot destructure property 'Op' of 'ctx.Sequelize' as it is undefined.
+    at UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:13)
+    at UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+
+pid: 10076
+hostname: IT-C20111420Z
+
+2021-06-10 16:24:13,921 ERROR 10076 [-/127.0.0.1/-/1ms GET /users] nodejs.TypeError: Cannot destructure property 'Op' of 'ctx.Sequelize' as it is undefined.
+    at UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:8:13)
+    at UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:14:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+
+pid: 10076
+hostname: IT-C20111420Z
+
+2021-06-10 16:24:16,240 INFO 13700 [egg-sequelize](37ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:24:18,305 INFO 13700 [egg-sequelize](18ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2021-06-10 16:24:18,326 INFO 13700 [egg-sequelize](20ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2021-06-10 16:24:27,572 INFO 13700 [egg-sequelize](16ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2021-06-10 16:24:27,573 INFO 13700 [egg-sequelize](17ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2021-06-10 16:25:05,800 INFO 11520 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:25:13,347 INFO 11520 [egg-sequelize](4ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2021-06-10 16:25:13,354 INFO 11520 [egg-sequelize](6ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2021-06-10 16:25:14,506 INFO 11520 [egg-sequelize](13ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2021-06-10 16:25:14,522 INFO 11520 [egg-sequelize](29ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2021-06-10 16:25:45,162 INFO 16864 [egg-sequelize](69ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:26:49,119 INFO 3948 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:27:47,539 INFO 13576 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:27:51,777 INFO 13576 [egg-sequelize](4ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2021-06-10 16:27:51,784 INFO 13576 [egg-sequelize](6ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2021-06-10 16:29:43,949 INFO 11888 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:30:15,141 ERROR 11888 [-/127.0.0.1/-/28076ms GET /users] nodejs.Error: Invalid value { name: undefined }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2647:41)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2359:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1325:28)
+    at MySQLQueryInterface.rawSelect (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:989:37)
+
+pid: 11888
+hostname: IT-C20111420Z
+
+2021-06-10 16:30:37,014 ERROR 11888 [-/127.0.0.1/-/11ms GET /users?name=name] nodejs.Error: Invalid value { name: 'name' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2647:41)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2359:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1325:28)
+    at MySQLQueryInterface.rawSelect (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:989:37)
+
+pid: 11888
+hostname: IT-C20111420Z
+
+2021-06-10 16:30:48,005 ERROR 11888 [-/127.0.0.1/-/10ms GET /users?name=name] nodejs.Error: Invalid value { name: 'name' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2647:41)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2359:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1325:28)
+    at MySQLQueryInterface.rawSelect (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:989:37)
+
+pid: 11888
+hostname: IT-C20111420Z
+
+2021-06-10 16:31:31,837 INFO 7264 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:31:37,100 INFO 7264 [egg-sequelize](7ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE 'name';
+2021-06-10 16:31:37,110 INFO 7264 [egg-sequelize](7ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE 'name';
+2021-06-10 16:32:31,037 INFO 15120 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:32:32,220 INFO 15120 [egg-sequelize](4ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%name%';
+2021-06-10 16:32:32,227 INFO 15120 [egg-sequelize](5ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%name%';
+2021-06-10 16:38:02,690 INFO 15508 [egg-sequelize](29ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:38:05,588 INFO 15508 [egg-sequelize](16ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE 'name';
+2021-06-10 16:38:05,608 INFO 15508 [egg-sequelize](18ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE 'name';
+2021-06-10 16:38:38,080 INFO 12456 [egg-sequelize](28ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:38:39,014 INFO 12456 [egg-sequelize](23ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE 'name%';
+2021-06-10 16:38:39,043 INFO 12456 [egg-sequelize](28ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE 'name%';
+2021-06-10 16:38:53,198 INFO 8568 [egg-sequelize](26ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:38:54,958 INFO 8568 [egg-sequelize](23ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%_1';
+2021-06-10 16:38:54,986 INFO 8568 [egg-sequelize](27ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%_1';
+2021-06-10 16:38:59,519 INFO 8568 [egg-sequelize](24ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%1';
+2021-06-10 16:38:59,522 INFO 8568 [egg-sequelize](27ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%1';
+2021-06-10 16:41:12,703 INFO 8568 [egg-sequelize](5ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%1';
+2021-06-10 16:41:12,709 INFO 8568 [egg-sequelize](5ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%1';
+2021-06-10 16:41:13,141 INFO 15044 [egg-sequelize](17ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:42:17,980 INFO 11436 [egg-sequelize](16ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:42:58,394 INFO 1740 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:42:58,980 ERROR 1740 [-/127.0.0.1/-/18ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:42:59,715 ERROR 1740 [-/127.0.0.1/-/8ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:43:00,796 ERROR 1740 [-/127.0.0.1/-/7ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:43:01,173 ERROR 1740 [-/127.0.0.1/-/8ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:43:01,367 ERROR 1740 [-/127.0.0.1/-/6ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:43:01,525 ERROR 1740 [-/127.0.0.1/-/8ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:43:01,691 ERROR 1740 [-/127.0.0.1/-/9ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:43:01,867 ERROR 1740 [-/127.0.0.1/-/20ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:43:02,020 ERROR 1740 [-/127.0.0.1/-/7ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:43:06,189 ERROR 1740 [-/127.0.0.1/-/9ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:43:06,806 ERROR 1740 [-/127.0.0.1/-/8ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:43:07,055 ERROR 1740 [-/127.0.0.1/-/8ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:43:07,228 ERROR 1740 [-/127.0.0.1/-/7ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:43:07,389 ERROR 1740 [-/127.0.0.1/-/7ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:43:07,533 ERROR 1740 [-/127.0.0.1/-/6ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:43:07,705 ERROR 1740 [-/127.0.0.1/-/8ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:43:07,848 ERROR 1740 [-/127.0.0.1/-/7ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:43:07,997 ERROR 1740 [-/127.0.0.1/-/6ms GET /users?name=1] nodejs.Error: Invalid value { name: '1' }
+    at Object.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sql-string.js:65:11)
+    at MySQLQueryGenerator.escape (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:994:22)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:69
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2571:52)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2353:19)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2674:19)
+
+pid: 1740
+hostname: IT-C20111420Z
+
+2021-06-10 16:45:21,363 INFO 16848 [egg-sequelize](14ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:45:37,272 INFO 16848 [egg-sequelize](9ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%1%';
+2021-06-10 16:45:37,279 INFO 16848 [egg-sequelize](4ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%1%';
+2021-06-10 16:45:37,982 INFO 16848 [egg-sequelize](10ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%1%';
+2021-06-10 16:45:37,999 INFO 16848 [egg-sequelize](28ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%1%';
+2021-06-10 16:45:38,332 INFO 16284 [egg-sequelize](13ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:45:38,568 INFO 16284 [egg-sequelize](10ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%1%';
+2021-06-10 16:45:38,588 INFO 16284 [egg-sequelize](19ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%1%';
+2021-06-10 16:45:38,798 INFO 16284 [egg-sequelize](13ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%1%';
+2021-06-10 16:45:38,809 INFO 16284 [egg-sequelize](25ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%1%';
+2021-06-10 16:45:38,970 INFO 16284 [egg-sequelize](14ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%1%';
+2021-06-10 16:45:38,991 INFO 16284 [egg-sequelize](35ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%1%';
+2021-06-10 16:45:39,111 INFO 16284 [egg-sequelize](4ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%1%';
+2021-06-10 16:45:39,114 INFO 16284 [egg-sequelize](8ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%1%';
+2021-06-10 16:45:42,883 INFO 16284 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:42,903 INFO 16284 [egg-sequelize](22ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:44,025 INFO 16284 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:44,058 INFO 16284 [egg-sequelize](36ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:44,518 INFO 16284 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:44,538 INFO 16284 [egg-sequelize](22ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:44,706 INFO 16284 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:44,728 INFO 16284 [egg-sequelize](24ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:44,876 INFO 16284 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:44,893 INFO 16284 [egg-sequelize](19ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:56,610 INFO 16284 [egg-sequelize](10ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:56,611 INFO 16284 [egg-sequelize](10ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:57,299 INFO 16284 [egg-sequelize](15ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:57,300 INFO 16284 [egg-sequelize](15ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:57,615 INFO 16284 [egg-sequelize](10ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:57,616 INFO 16284 [egg-sequelize](11ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:57,850 INFO 16284 [egg-sequelize](20ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:57,851 INFO 16284 [egg-sequelize](21ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:58,023 INFO 16284 [egg-sequelize](12ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:58,024 INFO 16284 [egg-sequelize](13ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:58,191 INFO 16284 [egg-sequelize](10ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:58,193 INFO 16284 [egg-sequelize](10ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%null%';
+2021-06-10 16:45:59,119 INFO 5880 [egg-sequelize](16ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:46:03,158 INFO 5880 [egg-sequelize](10ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';
+2021-06-10 16:46:03,171 INFO 5880 [egg-sequelize](12ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';
+2021-06-10 16:49:55,421 INFO 14356 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:50:42,924 INFO 11888 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:50:53,134 INFO 13940 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:50:56,765 INFO 6452 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:51:51,699 INFO 15292 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:51:55,481 INFO 9640 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:54:12,344 INFO 2836 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:54:18,765 INFO 200 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:55:53,816 INFO 10368 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:55:59,202 INFO 13272 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:56:02,928 INFO 11924 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:56:09,731 INFO 16176 [egg-sequelize](31ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:56:13,838 INFO 13792 [egg-sequelize](10ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:56:22,856 INFO 3284 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:57:01,493 INFO 13508 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:57:58,041 INFO 12944 [egg-sequelize](26ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:58:17,713 INFO 15292 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 16:59:17,666 WARN 15292 [-/127.0.0.1/-/61ms POST /posts] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2021-06-10 16:59:17,669 WARN 15292 [-/127.0.0.1/-/64ms POST /posts] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+message: "missing csrf token"
+pid: 15292
+hostname: IT-C20111420Z
+
+2021-06-10 16:59:37,227 INFO 15292 [egg-sequelize](8ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';
+2021-06-10 16:59:37,231 INFO 15292 [egg-sequelize](11ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';
+2021-06-10 17:00:40,060 INFO 15292 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';
+2021-06-10 17:00:40,062 INFO 15292 [egg-sequelize](4ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';
+2021-06-10 17:01:31,327 WARN 15292 [-/127.0.0.1/-/2ms POST /posts] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2021-06-10 17:01:31,327 WARN 15292 [-/127.0.0.1/-/3ms POST /posts] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+message: "invalid csrf token"
+pid: 15292
+hostname: IT-C20111420Z
+
+2021-06-10 17:03:01,349 WARN 15292 [-/127.0.0.1/-/1ms POST /posts] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2021-06-10 17:03:01,352 WARN 15292 [-/127.0.0.1/-/4ms POST /posts] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+message: "missing csrf token"
+pid: 15292
+hostname: IT-C20111420Z
+
+2021-06-10 17:03:18,740 WARN 15292 [-/127.0.0.1/-/2ms POST /posts] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2021-06-10 17:03:18,741 WARN 15292 [-/127.0.0.1/-/2ms POST /posts] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+message: "invalid csrf token"
+pid: 15292
+hostname: IT-C20111420Z
+
+2021-06-10 17:03:59,917 WARN 15292 [-/127.0.0.1/-/2ms POST /posts] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2021-06-10 17:03:59,918 WARN 15292 [-/127.0.0.1/-/3ms POST /posts] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+message: "invalid csrf token"
+pid: 15292
+hostname: IT-C20111420Z
+
+2021-06-10 17:04:07,579 WARN 15292 [-/127.0.0.1/-/1ms POST /posts] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2021-06-10 17:04:07,580 WARN 15292 [-/127.0.0.1/-/2ms POST /posts] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+message: "invalid csrf token"
+pid: 15292
+hostname: IT-C20111420Z
+
+2021-06-10 17:04:33,309 WARN 15292 [-/127.0.0.1/-/1ms POST /posts] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2021-06-10 17:04:33,310 WARN 15292 [-/127.0.0.1/-/2ms POST /posts] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+message: "invalid csrf token"
+pid: 15292
+hostname: IT-C20111420Z
+
+2021-06-10 17:04:36,615 WARN 15292 [-/127.0.0.1/-/1ms POST /posts] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2021-06-10 17:04:36,616 WARN 15292 [-/127.0.0.1/-/2ms POST /posts] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+message: "invalid csrf token"
+pid: 15292
+hostname: IT-C20111420Z
+
+2021-06-10 17:20:22,976 WARN 15292 [-/127.0.0.1/-/2ms POST /posts] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2021-06-10 17:20:22,977 WARN 15292 [-/127.0.0.1/-/3ms POST /posts] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+message: "invalid csrf token"
+pid: 15292
+hostname: IT-C20111420Z
+
+2021-06-10 17:39:49,357 INFO 16080 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 17:42:08,347 INFO 15564 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2021-06-10 17:43:20,192 INFO 15564 [egg-sequelize](10ms) Executed (default): INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);

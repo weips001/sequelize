@@ -1,0 +1,1764 @@
+2021-06-11 08:33:10,524 ERROR 7580 [-/127.0.0.1/-/30ms GET /posts] nodejs.SequelizeDatabaseError: Unknown column 'post.name' in 'where clause'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.rawSelect (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:995:18)
+    at async Function.aggregate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1986:19)
+    at async Function.count (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2037:12)
+    at async Promise.all (index 0)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\post.js:10:17)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'post.name' in 'where clause'","sql":"SELECT count(*) AS `count` FROM `posts` AS `post` WHERE `post`.`name` LIKE '%%';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'post.name' in 'where clause'","sql":"SELECT count(*) AS `count` FROM `posts` AS `post` WHERE `post`.`name` LIKE '%%';"}
+sql: "SELECT count(*) AS `count` FROM `posts` AS `post` WHERE `post`.`name` LIKE '%%';"
+parameters: undefined
+pid: 7580
+hostname: IT-C20111420Z
+
+2021-06-11 08:53:22,357 ERROR 11752 [-/127.0.0.1/-/17ms POST /posts] nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:242:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"address must be unique","type":"unique violation","path":"address","value":"新的2222","origin":"DB","instance":{"id":"82f0ab3a-855b-4f76-b5ac-4cc137248e23","address":"新的2222","updatedAt":"2021-06-11T00:53:22.340Z","createdAt":"2021-06-11T00:53:22.340Z"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"address":"新的2222"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '新的2222' for key 'address'","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["82f0ab3a-855b-4f76-b5ac-4cc137248e23","新的2222","2021-06-11 08:53:22","2021-06-11 08:53:22"]}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '新的2222' for key 'address'","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["82f0ab3a-855b-4f76-b5ac-4cc137248e23","新的2222","2021-06-11 08:53:22","2021-06-11 08:53:22"]}
+sql: "INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+pid: 11752
+hostname: IT-C20111420Z
+
+2021-06-11 08:57:50,982 ERROR 14504 [-/127.0.0.1/-/25ms POST /posts] nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:242:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"address must be unique","type":"unique violation","path":"address","value":"123","origin":"DB","instance":{"id":"e91246ca-bc15-4171-affb-0d83a63b1673","address":"123","updatedAt":"2021-06-11T00:57:50.958Z","createdAt":"2021-06-11T00:57:50.958Z"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"address":"123"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '123' for key 'address'","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["e91246ca-bc15-4171-affb-0d83a63b1673","123","2021-06-11 08:57:50","2021-06-11 08:57:50"]}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '123' for key 'address'","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["e91246ca-bc15-4171-affb-0d83a63b1673","123","2021-06-11 08:57:50","2021-06-11 08:57:50"]}
+sql: "INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+pid: 14504
+hostname: IT-C20111420Z
+
+2021-06-11 09:05:48,923 ERROR 12920 [-/127.0.0.1/-/4ms POST /posts] nodejs.SequelizeValidationError: notNull Violation: post.address cannot be null
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"post.address cannot be null","type":"notNull Violation","path":"address","value":null,"origin":"CORE","instance":{"id":"433d1e67-c7b9-4787-a59c-c886534c976e","address":null,"updatedAt":"2021-06-11T01:05:48.920Z","createdAt":"2021-06-11T01:05:48.920Z"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 12920
+hostname: IT-C20111420Z
+
+2021-06-11 09:06:22,024 ERROR 15580 [-/127.0.0.1/-/41ms POST /posts] nodejs.SequelizeDatabaseError: Column 'address' cannot be null
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["df8068cd-8a8b-470f-9ef9-2c265b449532",null,"2021-06-11 09:06:22","2021-06-11 09:06:22"]}
+original: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["df8068cd-8a8b-470f-9ef9-2c265b449532",null,"2021-06-11 09:06:22","2021-06-11 09:06:22"]}
+sql: "INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+parameters: ["df8068cd-8a8b-470f-9ef9-2c265b449532",null,"2021-06-11 09:06:22","2021-06-11 09:06:22"]
+pid: 15580
+hostname: IT-C20111420Z
+
+2021-06-11 09:06:25,932 ERROR 15580 [-/127.0.0.1/-/9ms POST /posts] nodejs.SequelizeDatabaseError: Column 'address' cannot be null
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["25ddb3a8-5fd7-4a01-bf24-15c079957d5c",null,"2021-06-11 09:06:25","2021-06-11 09:06:25"]}
+original: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["25ddb3a8-5fd7-4a01-bf24-15c079957d5c",null,"2021-06-11 09:06:25","2021-06-11 09:06:25"]}
+sql: "INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+parameters: ["25ddb3a8-5fd7-4a01-bf24-15c079957d5c",null,"2021-06-11 09:06:25","2021-06-11 09:06:25"]
+pid: 15580
+hostname: IT-C20111420Z
+
+2021-06-11 09:06:28,121 ERROR 15580 [-/127.0.0.1/-/6ms POST /posts] nodejs.SequelizeDatabaseError: Column 'address' cannot be null
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["6d11edb4-acc8-4f2a-bb69-06e72223fb57",null,"2021-06-11 09:06:28","2021-06-11 09:06:28"]}
+original: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["6d11edb4-acc8-4f2a-bb69-06e72223fb57",null,"2021-06-11 09:06:28","2021-06-11 09:06:28"]}
+sql: "INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+parameters: ["6d11edb4-acc8-4f2a-bb69-06e72223fb57",null,"2021-06-11 09:06:28","2021-06-11 09:06:28"]
+pid: 15580
+hostname: IT-C20111420Z
+
+2021-06-11 09:06:41,662 ERROR 5660 [-/127.0.0.1/-/56ms POST /posts] nodejs.SequelizeDatabaseError: Column 'address' cannot be null
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["f5c58f6a-43b6-4177-a158-d332c5628a50",null,"2021-06-11 09:06:41","2021-06-11 09:06:41"]}
+original: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["f5c58f6a-43b6-4177-a158-d332c5628a50",null,"2021-06-11 09:06:41","2021-06-11 09:06:41"]}
+sql: "INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+parameters: ["f5c58f6a-43b6-4177-a158-d332c5628a50",null,"2021-06-11 09:06:41","2021-06-11 09:06:41"]
+pid: 5660
+hostname: IT-C20111420Z
+
+2021-06-11 09:06:45,287 ERROR 5660 [-/127.0.0.1/-/10ms POST /posts] nodejs.SequelizeDatabaseError: Column 'address' cannot be null
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["e04a70ee-c5fd-4d54-b82d-f06625e9d0bb",null,"2021-06-11 09:06:45","2021-06-11 09:06:45"]}
+original: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["e04a70ee-c5fd-4d54-b82d-f06625e9d0bb",null,"2021-06-11 09:06:45","2021-06-11 09:06:45"]}
+sql: "INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+parameters: ["e04a70ee-c5fd-4d54-b82d-f06625e9d0bb",null,"2021-06-11 09:06:45","2021-06-11 09:06:45"]
+pid: 5660
+hostname: IT-C20111420Z
+
+2021-06-11 09:06:46,347 ERROR 5660 [-/127.0.0.1/-/13ms POST /posts] nodejs.SequelizeDatabaseError: Column 'address' cannot be null
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["9d47ff08-9064-4bb9-a629-a6d868595989",null,"2021-06-11 09:06:46","2021-06-11 09:06:46"]}
+original: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["9d47ff08-9064-4bb9-a629-a6d868595989",null,"2021-06-11 09:06:46","2021-06-11 09:06:46"]}
+sql: "INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+parameters: ["9d47ff08-9064-4bb9-a629-a6d868595989",null,"2021-06-11 09:06:46","2021-06-11 09:06:46"]
+pid: 5660
+hostname: IT-C20111420Z
+
+2021-06-11 09:07:09,691 ERROR 5660 [-/127.0.0.1/-/47ms POST /posts] nodejs.SequelizeDatabaseError: Column 'address' cannot be null
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["5d90f0f2-fea4-4053-b20b-c10b0595e3d5",null,"2021-06-11 09:07:09","2021-06-11 09:07:09"]}
+original: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["5d90f0f2-fea4-4053-b20b-c10b0595e3d5",null,"2021-06-11 09:07:09","2021-06-11 09:07:09"]}
+sql: "INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+parameters: ["5d90f0f2-fea4-4053-b20b-c10b0595e3d5",null,"2021-06-11 09:07:09","2021-06-11 09:07:09"]
+pid: 5660
+hostname: IT-C20111420Z
+
+2021-06-11 09:07:12,365 ERROR 5660 [-/127.0.0.1/-/21ms POST /posts] nodejs.SequelizeDatabaseError: Column 'address' cannot be null
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["ea05a3a5-9b2f-4589-abfc-7fcb0dc4c09e",null,"2021-06-11 09:07:12","2021-06-11 09:07:12"]}
+original: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["ea05a3a5-9b2f-4589-abfc-7fcb0dc4c09e",null,"2021-06-11 09:07:12","2021-06-11 09:07:12"]}
+sql: "INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+parameters: ["ea05a3a5-9b2f-4589-abfc-7fcb0dc4c09e",null,"2021-06-11 09:07:12","2021-06-11 09:07:12"]
+pid: 5660
+hostname: IT-C20111420Z
+
+2021-06-11 09:16:37,422 ERROR 11480 [-/127.0.0.1/-/6ms POST /posts] nodejs.SequelizeValidationError: Validation error: Validation notEmpty on address failed
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation notEmpty on address failed","type":"Validation error","path":"address","value":"","origin":"FUNCTION","instance":{"id":"371d726e-7497-400d-bfd4-4c2f4b498824","address":"","updatedAt":"2021-06-11T01:16:37.419Z","createdAt":"2021-06-11T01:16:37.419Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[true],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 11480
+hostname: IT-C20111420Z
+
+2021-06-11 09:16:53,106 ERROR 11480 [-/127.0.0.1/-/4ms POST /posts] nodejs.SequelizeValidationError: Validation error: Validation notEmpty on address failed
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation notEmpty on address failed","type":"Validation error","path":"address","value":"","origin":"FUNCTION","instance":{"id":"fead9829-049f-45c7-be28-ae46b02ce138","address":"","updatedAt":"2021-06-11T01:16:53.104Z","createdAt":"2021-06-11T01:16:53.104Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[true],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 11480
+hostname: IT-C20111420Z
+
+2021-06-11 09:27:22,690 ERROR 9144 [-/127.0.0.1/-/6ms POST /users] nodejs.SequelizeValidationError: Validation error: 年齡不能小於10歲
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"年齡不能小於10歲","type":"Validation error","path":"checkAge","value":null,"origin":"FUNCTION","instance":{"id":null,"name":"zs","age":3,"updatedAt":"2021-06-11T01:27:22.686Z","createdAt":"2021-06-11T01:27:22.686Z"},"validatorKey":"checkAge","validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 9144
+hostname: IT-C20111420Z
+
+2021-06-11 09:33:05,849 ERROR 9144 [-/127.0.0.1/-/6ms POST /users] nodejs.SequelizeValidationError: Validation error: 年齡不能小於10歲
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"年齡不能小於10歲","type":"Validation error","path":"checkAge","value":null,"origin":"FUNCTION","instance":{"id":null,"name":"zs","age":3,"updatedAt":"2021-06-11T01:33:05.845Z","createdAt":"2021-06-11T01:33:05.845Z"},"validatorKey":"checkAge","validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 9144
+hostname: IT-C20111420Z
+
+2021-06-11 09:33:31,698 ERROR 13176 [-/127.0.0.1/-/68ms POST /users] nodejs.TypeError: ctx.model.User.validate is not a function
+    at UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:32)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:36:12
+
+pid: 13176
+hostname: IT-C20111420Z
+
+2021-06-11 09:34:02,130 ERROR 12292 [-/127.0.0.1/-/28ms POST /users] nodejs.TypeError: ctx.model.User.validate is not a function
+    at UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:32)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:36:12
+
+pid: 12292
+hostname: IT-C20111420Z
+
+2021-06-11 09:50:04,407 ERROR 12292 [-/127.0.0.1/-/3ms POST /users] nodejs.TypeError: ctx.model.User.validate is not a function
+    at UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:32)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:36:12
+
+pid: 12292
+hostname: IT-C20111420Z
+
+2021-06-11 09:50:19,459 ERROR 5852 [-/127.0.0.1/-/74ms POST /users] nodejs.SequelizeValidationError: Validation error: 年齡不能小於10歲
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:38:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"年齡不能小於10歲","type":"Validation error","path":"checkAge","value":null,"origin":"FUNCTION","instance":{"id":null,"name":"zs","age":5,"updatedAt":"2021-06-11T01:50:19.451Z","createdAt":"2021-06-11T01:50:19.451Z"},"validatorKey":"checkAge","validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 5852
+hostname: IT-C20111420Z
+
+2021-06-11 09:52:08,067 ERROR 17096 [-/127.0.0.1/-/36ms POST /users] nodejs.SequelizeValidationError: Validation error: 年齡不能小於10歲
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:38:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"年齡不能小於10歲","type":"Validation error","path":"checkAge","value":null,"origin":"FUNCTION","instance":{"id":null,"name":"zs","age":5,"updatedAt":"2021-06-11T01:52:08.060Z","createdAt":"2021-06-11T01:52:08.060Z"},"validatorKey":"checkAge","validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 17096
+hostname: IT-C20111420Z
+
+2021-06-11 09:52:26,367 ERROR 12320 [-/127.0.0.1/-/40ms POST /users] nodejs.SequelizeValidationError: Validation error: 年齡不能小於10歲
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:38:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"年齡不能小於10歲","type":"Validation error","path":"checkAge","value":null,"origin":"FUNCTION","instance":{"id":null,"name":"zs","age":5,"updatedAt":"2021-06-11T01:52:26.361Z","createdAt":"2021-06-11T01:52:26.361Z"},"validatorKey":"checkAge","validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 12320
+hostname: IT-C20111420Z
+
+2021-06-11 10:06:19,894 ERROR 12456 [-/127.0.0.1/-/94ms POST /users] nodejs.SequelizeValidationError: Validation error: 年齡不能小於10歲
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:38:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"年齡不能小於10歲","type":"Validation error","path":"checkAge","value":null,"origin":"FUNCTION","instance":{"id":null,"name":"zs","age":5,"updatedAt":"2021-06-11T02:06:19.888Z","createdAt":"2021-06-11T02:06:19.888Z"},"validatorKey":"checkAge","validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 12456
+hostname: IT-C20111420Z
+
+2021-06-11 10:06:43,937 ERROR 13396 [-/127.0.0.1/-/53ms POST /users] nodejs.SequelizeValidationError: Validation error: 年齡不能小於10歲
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:38:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"年齡不能小於10歲","type":"Validation error","path":"checkAge","value":null,"origin":"FUNCTION","instance":{"id":null,"name":"zs","age":5,"updatedAt":"2021-06-11T02:06:43.922Z","createdAt":"2021-06-11T02:06:43.922Z"},"validatorKey":"checkAge","validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 13396
+hostname: IT-C20111420Z
+
+2021-06-11 10:15:55,046 ERROR 9372 nodejs.SequelizeValidationError: Validation error: 年齡不能小於10歲
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+name: "SequelizeValidationError"
+errors: [{"message":"年齡不能小於10歲","type":"Validation error","path":"checkAge","value":null,"origin":"FUNCTION","instance":{"id":null,"name":"ls","age":5},"validatorKey":"checkAge","validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 9372
+hostname: IT-C20111420Z
+
+2021-06-11 10:16:16,694 ERROR 12196 [-/127.0.0.1/-/26ms POST /users] nodejs.SequelizeValidationError: Validation error: 年齡不能小於10歲
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:37:17)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+name: "SequelizeValidationError"
+errors: [{"message":"年齡不能小於10歲","type":"Validation error","path":"checkAge","value":null,"origin":"FUNCTION","instance":{"id":null,"name":"ls","age":5},"validatorKey":"checkAge","validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 12196
+hostname: IT-C20111420Z
+
+2021-06-11 10:18:07,389 ERROR 15756 [-/127.0.0.1/-/32ms POST /users] nodejs.SequelizeValidationError: Validation error: 年齡不能小於10歲
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"年齡不能小於10歲","type":"Validation error","path":"checkAge","value":null,"origin":"FUNCTION","instance":{"id":null,"name":"ls","age":5,"updatedAt":"2021-06-11T02:18:07.384Z","createdAt":"2021-06-11T02:18:07.384Z"},"validatorKey":"checkAge","validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 15756
+hostname: IT-C20111420Z
+
+2021-06-11 10:33:55,257 ERROR 16824 [-/127.0.0.1/-/71ms POST /users] nodejs.SequelizeValidationError: Validation error: 年齡不能小於10歲
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"年齡不能小於10歲","type":"Validation error","path":"checkAge","value":null,"origin":"FUNCTION","instance":{"id":null,"name":"ls","age":5,"updatedAt":"2021-06-11T02:33:55.249Z","createdAt":"2021-06-11T02:33:55.249Z"},"validatorKey":"checkAge","validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 16824
+hostname: IT-C20111420Z
+
+2021-06-11 10:39:27,153 ERROR 16824 [-/127.0.0.1/-/6ms POST /users] nodejs.SequelizeValidationError: Validation error: 年齡不能小於10歲
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"年齡不能小於10歲","type":"Validation error","path":"checkAge","value":null,"origin":"FUNCTION","instance":{"id":null,"name":"ls","age":5,"updatedAt":"2021-06-11T02:39:27.149Z","createdAt":"2021-06-11T02:39:27.149Z"},"validatorKey":"checkAge","validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 16824
+hostname: IT-C20111420Z
+
+2021-06-11 14:02:44,638 ERROR 11736 [-/127.0.0.1/-/249ms POST /posts] nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:242:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"address must be unique","type":"unique violation","path":"address","value":"zzzz","origin":"DB","instance":{"id":"5de857c0-61a3-43b6-8d7e-2a91727e4a4f","address":"zzzz","updatedAt":"2021-06-11T06:02:44.416Z","createdAt":"2021-06-11T06:02:44.416Z"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"address":"zzzz"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'zzzz' for key 'address'","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["5de857c0-61a3-43b6-8d7e-2a91727e4a4f","zzzz","2021-06-11 14:02:44","2021-06-11 14:02:44"]}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'zzzz' for key 'address'","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["5de857c0-61a3-43b6-8d7e-2a91727e4a4f","zzzz","2021-06-11 14:02:44","2021-06-11 14:02:44"]}
+sql: "INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+pid: 11736
+hostname: IT-C20111420Z
+
+2021-06-11 14:03:19,138 ERROR 11736 [-/127.0.0.1/-/677ms POST /posts] nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:242:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"address must be unique","type":"unique violation","path":"address","value":"zzzz","origin":"DB","instance":{"id":"9ca333e8-9f09-4bab-8bf2-1758ea85d4db","address":"zzzz","updatedAt":"2021-06-11T06:03:18.465Z","createdAt":"2021-06-11T06:03:18.465Z"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"address":"zzzz"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'zzzz' for key 'address'","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["9ca333e8-9f09-4bab-8bf2-1758ea85d4db","zzzz","2021-06-11 14:03:18","2021-06-11 14:03:18"]}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'zzzz' for key 'address'","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["9ca333e8-9f09-4bab-8bf2-1758ea85d4db","zzzz","2021-06-11 14:03:18","2021-06-11 14:03:18"]}
+sql: "INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+pid: 11736
+hostname: IT-C20111420Z
+
+2021-06-11 14:03:22,563 ERROR 11736 [-/127.0.0.1/-/79ms POST /posts] nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:242:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"address must be unique","type":"unique violation","path":"address","value":"zzzz","origin":"DB","instance":{"id":"00f48d3c-2375-43fd-96ef-0b7ceaa6b858","address":"zzzz","updatedAt":"2021-06-11T06:03:22.485Z","createdAt":"2021-06-11T06:03:22.485Z"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"address":"zzzz"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'zzzz' for key 'address'","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["00f48d3c-2375-43fd-96ef-0b7ceaa6b858","zzzz","2021-06-11 14:03:22","2021-06-11 14:03:22"]}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'zzzz' for key 'address'","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["00f48d3c-2375-43fd-96ef-0b7ceaa6b858","zzzz","2021-06-11 14:03:22","2021-06-11 14:03:22"]}
+sql: "INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+pid: 11736
+hostname: IT-C20111420Z
+
+2021-06-11 14:03:44,602 ERROR 11736 [-/127.0.0.1/-/250ms POST /posts] nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:242:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"address must be unique","type":"unique violation","path":"address","value":"zzzz","origin":"DB","instance":{"id":"4fcd3115-efaa-4595-91c3-76240ba3185b","address":"zzzz","updatedAt":"2021-06-11T06:03:44.353Z","createdAt":"2021-06-11T06:03:44.353Z"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"address":"zzzz"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'zzzz' for key 'address'","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["4fcd3115-efaa-4595-91c3-76240ba3185b","zzzz","2021-06-11 14:03:44","2021-06-11 14:03:44"]}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry 'zzzz' for key 'address'","sql":"INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["4fcd3115-efaa-4595-91c3-76240ba3185b","zzzz","2021-06-11 14:03:44","2021-06-11 14:03:44"]}
+sql: "INSERT INTO `posts` (`id`,`address`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+pid: 11736
+hostname: IT-C20111420Z
+
+2021-06-11 15:12:33,586 ERROR 14092 [-/127.0.0.1/-/94ms POST /posts] nodejs.SequelizeDatabaseError: Table 'wps.post' doesn't exist
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async PostController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'wps.post' doesn't exist","sql":"INSERT INTO `post` (`id`,`address`,`createdAt`,`updatedAt`) VALUES (?,?,?,?);","parameters":["c25413ae2d554eeeb6d9397771d71a0a","zzzz","2021-06-11 15:12:33","2021-06-11 15:12:33"]}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'wps.post' doesn't exist","sql":"INSERT INTO `post` (`id`,`address`,`createdAt`,`updatedAt`) VALUES (?,?,?,?);","parameters":["c25413ae2d554eeeb6d9397771d71a0a","zzzz","2021-06-11 15:12:33","2021-06-11 15:12:33"]}
+sql: "INSERT INTO `post` (`id`,`address`,`createdAt`,`updatedAt`) VALUES (?,?,?,?);"
+parameters: ["c25413ae2d554eeeb6d9397771d71a0a","zzzz","2021-06-11 15:12:33","2021-06-11 15:12:33"]
+pid: 14092
+hostname: IT-C20111420Z
+
+2021-06-11 15:35:40,041 ERROR 12788 [-/127.0.0.1/-/179ms GET /posts] nodejs.SequelizeDatabaseError: Unknown column 'createdAt' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\post.js:10:17)
+    at async PostController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:17:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `address`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `posts` AS `post`;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `address`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `posts` AS `post`;"}
+sql: "SELECT `id`, `address`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `posts` AS `post`;"
+parameters: undefined
+pid: 12788
+hostname: IT-C20111420Z
+
+2021-06-11 15:36:29,435 ERROR 16756 [-/127.0.0.1/-/23ms GET /posts] nodejs.SequelizeDatabaseError: Unknown column 'createdAt' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\post.js:10:17)
+    at async PostController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:17:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `address`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `posts` AS `post`;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `address`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `posts` AS `post`;"}
+sql: "SELECT `id`, `address`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `posts` AS `post`;"
+parameters: undefined
+pid: 16756
+hostname: IT-C20111420Z
+
+2021-06-11 15:41:35,941 ERROR 16596 [-/127.0.0.1/-/36ms GET /posts] nodejs.SequelizeDatabaseError: Unknown column 'createdAt' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\post.js:10:17)
+    at async PostController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\post.js:17:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `address`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `posts` AS `post`;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `address`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `posts` AS `post`;"}
+sql: "SELECT `id`, `address`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `posts` AS `post`;"
+parameters: undefined
+pid: 16596
+hostname: IT-C20111420Z
+
+2021-06-11 15:41:46,109 ERROR 16596 [-/127.0.0.1/-/22ms GET /users] nodejs.SequelizeDatabaseError: Unknown column 'createdAt' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:10:17)
+    at async UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:23:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';"}
+sql: "SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';"
+parameters: undefined
+pid: 16596
+hostname: IT-C20111420Z
+
+2021-06-11 15:42:10,617 ERROR 16596 [-/127.0.0.1/-/95ms GET /users] nodejs.SequelizeDatabaseError: Unknown column 'createdAt' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:10:17)
+    at async UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:23:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';"}
+sql: "SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';"
+parameters: undefined
+pid: 16596
+hostname: IT-C20111420Z
+
+2021-06-11 15:42:13,347 ERROR 16596 [-/127.0.0.1/-/10ms GET /users] nodejs.SequelizeDatabaseError: Unknown column 'createdAt' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:10:17)
+    at async UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:23:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';"}
+sql: "SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';"
+parameters: undefined
+pid: 16596
+hostname: IT-C20111420Z
+
+2021-06-11 15:42:14,128 ERROR 16596 [-/127.0.0.1/-/13ms GET /users] nodejs.SequelizeDatabaseError: Unknown column 'createdAt' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.index (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:10:17)
+    at async UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:23:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';"}
+sql: "SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`name` LIKE '%%';"
+parameters: undefined
+pid: 16596
+hostname: IT-C20111420Z
+
+2021-06-11 16:15:24,597 ERROR 14212 [-/127.0.0.1/-/37ms POST /bills] nodejs.SequelizeDatabaseError: Unknown column 'bill_no' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async BillController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\bill.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'bill_no' in 'field list'","sql":"INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["8bff3f4e07d34ded9f2b97c3db928067","33676527889","2021-06-11 16:15:24","2021-06-11 16:15:24"]}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'bill_no' in 'field list'","sql":"INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["8bff3f4e07d34ded9f2b97c3db928067","33676527889","2021-06-11 16:15:24","2021-06-11 16:15:24"]}
+sql: "INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+parameters: ["8bff3f4e07d34ded9f2b97c3db928067","33676527889","2021-06-11 16:15:24","2021-06-11 16:15:24"]
+pid: 14212
+hostname: IT-C20111420Z
+
+2021-06-11 16:30:58,183 ERROR 9832 [-/127.0.0.1/-/97ms POST /bills] nodejs.SequelizeDatabaseError: Unknown column 'bill_no' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async BillController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\bill.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'bill_no' in 'field list'","sql":"INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["8d93f1a5a74f46bf9942dfa76034f68f","33676527889","2021-06-11 16:30:58","2021-06-11 16:30:58"]}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'bill_no' in 'field list'","sql":"INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["8d93f1a5a74f46bf9942dfa76034f68f","33676527889","2021-06-11 16:30:58","2021-06-11 16:30:58"]}
+sql: "INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+parameters: ["8d93f1a5a74f46bf9942dfa76034f68f","33676527889","2021-06-11 16:30:58","2021-06-11 16:30:58"]
+pid: 9832
+hostname: IT-C20111420Z
+
+2021-06-11 16:31:57,373 ERROR 9832 [-/127.0.0.1/-/105ms POST /bills] nodejs.SequelizeDatabaseError: Unknown column 'bill_no' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async BillController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\bill.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'bill_no' in 'field list'","sql":"INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["2c76eb28d8e841d2bb7aee8a41ac605c","33676527889","2021-06-11 16:31:57","2021-06-11 16:31:57"]}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'bill_no' in 'field list'","sql":"INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["2c76eb28d8e841d2bb7aee8a41ac605c","33676527889","2021-06-11 16:31:57","2021-06-11 16:31:57"]}
+sql: "INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+parameters: ["2c76eb28d8e841d2bb7aee8a41ac605c","33676527889","2021-06-11 16:31:57","2021-06-11 16:31:57"]
+pid: 9832
+hostname: IT-C20111420Z
+
+2021-06-11 16:32:00,433 ERROR 9832 [-/127.0.0.1/-/12ms POST /bills] nodejs.SequelizeDatabaseError: Unknown column 'bill_no' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async BillController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\bill.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'bill_no' in 'field list'","sql":"INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["685e23eb64e64161a4088b27fedf9eb1","33676527889","2021-06-11 16:32:00","2021-06-11 16:32:00"]}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'bill_no' in 'field list'","sql":"INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["685e23eb64e64161a4088b27fedf9eb1","33676527889","2021-06-11 16:32:00","2021-06-11 16:32:00"]}
+sql: "INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+parameters: ["685e23eb64e64161a4088b27fedf9eb1","33676527889","2021-06-11 16:32:00","2021-06-11 16:32:00"]
+pid: 9832
+hostname: IT-C20111420Z
+
+2021-06-11 16:32:51,525 ERROR 9832 [-/127.0.0.1/-/18ms POST /bills] nodejs.SequelizeDatabaseError: Unknown column 'created_at' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async BillController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\bill.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["dc4aafc67e7148a2a0700ca0692b0692","33676527889","2021-06-11 16:32:51","2021-06-11 16:32:51"]}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["dc4aafc67e7148a2a0700ca0692b0692","33676527889","2021-06-11 16:32:51","2021-06-11 16:32:51"]}
+sql: "INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+parameters: ["dc4aafc67e7148a2a0700ca0692b0692","33676527889","2021-06-11 16:32:51","2021-06-11 16:32:51"]
+pid: 9832
+hostname: IT-C20111420Z
+
+2021-06-11 16:33:01,626 ERROR 9832 [-/127.0.0.1/-/73ms POST /bills] nodejs.SequelizeDatabaseError: Unknown column 'created_at' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async BillController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\bill.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["c507730d05f64ee9ad53c1e450de2898","33676527889","2021-06-11 16:33:01","2021-06-11 16:33:01"]}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["c507730d05f64ee9ad53c1e450de2898","33676527889","2021-06-11 16:33:01","2021-06-11 16:33:01"]}
+sql: "INSERT INTO `bills` (`id`,`bill_no`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+parameters: ["c507730d05f64ee9ad53c1e450de2898","33676527889","2021-06-11 16:33:01","2021-06-11 16:33:01"]
+pid: 9832
+hostname: IT-C20111420Z
+
+2021-06-11 17:04:37,539 ERROR 9276 [-/127.0.0.1/-/7ms POST /users] nodejs.SequelizeValidationError: Validation error: 年齡不能小於10歲
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"年齡不能小於10歲","type":"Validation error","path":"checkAge","value":null,"origin":"FUNCTION","instance":{"id":null,"name":"ls","age":5,"updatedAt":"2021-06-11T09:04:37.534Z","createdAt":"2021-06-11T09:04:37.534Z"},"validatorKey":"checkAge","validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 9276
+hostname: IT-C20111420Z
+
+2021-06-11 17:20:51,384 ERROR 17052 [-/127.0.0.1/-/2ms GET /bills] nodejs.TypeError: Cannot read property 'index' of undefined
+    at BillController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\bill.js:17:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:36:12
+
+pid: 17052
+hostname: IT-C20111420Z
+
+2021-06-11 17:22:41,011 ERROR 6800 [-/127.0.0.1/-/7ms GET /bills] nodejs.TypeError: Cannot read property 'index' of undefined
+    at BillController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\bill.js:17:39)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-compose\index.js:36:12
+
+pid: 6800
+hostname: IT-C20111420Z
+
+2021-06-11 17:39:44,182 ERROR 5612 [-/127.0.0.1/-/38ms POST /tests] nodejs.SequelizeDatabaseError: Unknown column 'first_name' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async TestController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\test.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'first_name' in 'field list'","sql":"INSERT INTO `tests` (`id`,`first_name`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["27f4b955adb94a2699394e650a5384eb","zs","2021-06-11 17:39:44","2021-06-11 17:39:44"]}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'first_name' in 'field list'","sql":"INSERT INTO `tests` (`id`,`first_name`,`created_at`,`updated_at`) VALUES (?,?,?,?);","parameters":["27f4b955adb94a2699394e650a5384eb","zs","2021-06-11 17:39:44","2021-06-11 17:39:44"]}
+sql: "INSERT INTO `tests` (`id`,`first_name`,`created_at`,`updated_at`) VALUES (?,?,?,?);"
+parameters: ["27f4b955adb94a2699394e650a5384eb","zs","2021-06-11 17:39:44","2021-06-11 17:39:44"]
+pid: 5612
+hostname: IT-C20111420Z
+
+2021-06-11 17:40:07,649 ERROR 16152 [-/127.0.0.1/-/45ms POST /tests] nodejs.SequelizeDatabaseError: Unknown column 'created_at' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async TestController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\test.js:28:18)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"INSERT INTO `tests` (`id`,`created_at`,`updated_at`) VALUES (?,?,?);","parameters":["ba6d7623df4b4d8699759f31208fd6cf","2021-06-11 17:40:07","2021-06-11 17:40:07"]}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"INSERT INTO `tests` (`id`,`created_at`,`updated_at`) VALUES (?,?,?);","parameters":["ba6d7623df4b4d8699759f31208fd6cf","2021-06-11 17:40:07","2021-06-11 17:40:07"]}
+sql: "INSERT INTO `tests` (`id`,`created_at`,`updated_at`) VALUES (?,?,?);"
+parameters: ["ba6d7623df4b4d8699759f31208fd6cf","2021-06-11 17:40:07","2021-06-11 17:40:07"]
+pid: 16152
+hostname: IT-C20111420Z
+
+2021-06-16 14:33:48,056 ERROR 23612 [-/127.0.0.1/-/36ms GET /user] nodejs.SequelizeDatabaseError: Table 'wps.User' doesn't exist
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.rawSelect (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:995:18)
+    at async Function.aggregate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1986:19)
+    at async Function.count (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2037:12)
+    at async Promise.all (index 0)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.list (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:10:17)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'wps.User' doesn't exist","sql":"SELECT count(*) AS `count` FROM `User` AS `User` WHERE `User`.`name` LIKE '%%';"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'wps.User' doesn't exist","sql":"SELECT count(*) AS `count` FROM `User` AS `User` WHERE `User`.`name` LIKE '%%';"}
+sql: "SELECT count(*) AS `count` FROM `User` AS `User` WHERE `User`.`name` LIKE '%%';"
+parameters: undefined
+pid: 23612
+hostname: IT-C20111420Z
+
+2021-06-16 14:35:11,380 ERROR 9688 [-/127.0.0.1/-/29ms GET /user] nodejs.SequelizeDatabaseError: Table 'wps.User' doesn't exist
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.list (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:10:17)
+    at async UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:23:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'wps.User' doesn't exist","sql":"SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `User` AS `User` WHERE `User`.`name` LIKE '%%';"}
+original: {"code":"ER_NO_SUCH_TABLE","errno":1146,"sqlState":"42S02","sqlMessage":"Table 'wps.User' doesn't exist","sql":"SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `User` AS `User` WHERE `User`.`name` LIKE '%%';"}
+sql: "SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `User` AS `User` WHERE `User`.`name` LIKE '%%';"
+parameters: undefined
+pid: 9688
+hostname: IT-C20111420Z
+
+2021-06-16 14:55:28,524 ERROR 23500 [-/127.0.0.1/-/35ms GET /user] nodejs.SequelizeDatabaseError: Unknown column 'createdAt' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.list (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:10:29)
+    at async UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:23:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `createdAt`, `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `createdAt`, `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%';"}
+sql: "SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `createdAt`, `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%';"
+parameters: undefined
+pid: 23500
+hostname: IT-C20111420Z
+
+2021-06-16 14:55:36,670 ERROR 23500 [-/127.0.0.1/-/9ms GET /user] nodejs.SequelizeDatabaseError: Unknown column 'createdAt' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.list (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:10:29)
+    at async UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:23:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `createdAt`, `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `createdAt`, `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%';"}
+sql: "SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `createdAt`, `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%';"
+parameters: undefined
+pid: 23500
+hostname: IT-C20111420Z
+
+2021-06-16 14:55:57,923 ERROR 23500 [-/127.0.0.1/-/92ms GET /user] nodejs.SequelizeDatabaseError: Unknown column 'createdAt' in 'field list'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.list (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:10:29)
+    at async UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:23:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `createdAt`, `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'createdAt' in 'field list'","sql":"SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `createdAt`, `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%';"}
+sql: "SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `createdAt`, `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%';"
+parameters: undefined
+pid: 23500
+hostname: IT-C20111420Z
+
+2021-06-16 15:02:19,703 ERROR 22632 [-/127.0.0.1/-/73ms POST /user] nodejs.SequelizeValidationError: notNull Violation: user.name cannot be null
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"user.name cannot be null","type":"notNull Violation","path":"name","value":null,"origin":"CORE","instance":{"id":"f211275ee0e845b7a43f5d721b1b082c","age":25,"updatedAt":"2021-06-16T07:02:19.698Z","createdAt":"2021-06-16T07:02:19.698Z"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 22632
+hostname: IT-C20111420Z
+
+2021-06-16 15:03:07,953 ERROR 22632 [-/127.0.0.1/-/6ms POST /user] nodejs.SequelizeValidationError: notNull Violation: user.name cannot be null
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"user.name cannot be null","type":"notNull Violation","path":"name","value":null,"origin":"CORE","instance":{"id":"251a5cd09b8b485aaae62b279d2f4786","age":25,"updatedAt":"2021-06-16T07:03:07.950Z","createdAt":"2021-06-16T07:03:07.950Z"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 22632
+hostname: IT-C20111420Z
+
+2021-06-16 15:03:12,983 ERROR 25900 [-/127.0.0.1/-/36ms POST /user] nodejs.SequelizeValidationError: notNull Violation: aaa
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"aaa","type":"notNull Violation","path":"name","value":null,"origin":"CORE","instance":{"id":"3589cbcef004426381217df7d7576ded","age":25,"updatedAt":"2021-06-16T07:03:12.980Z","createdAt":"2021-06-16T07:03:12.980Z"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 25900
+hostname: IT-C20111420Z
+
+2021-06-16 15:03:35,618 ERROR 25900 [-/127.0.0.1/-/6ms POST /user] nodejs.SequelizeValidationError: Validation error: bbb
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"bbb","type":"Validation error","path":"name","value":"","origin":"FUNCTION","instance":{"id":"801475940d9a4d5c834c7dd257b6b50e","name":"","age":25,"updatedAt":"2021-06-16T07:03:35.614Z","createdAt":"2021-06-16T07:03:35.614Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"bbb"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 25900
+hostname: IT-C20111420Z
+
+2021-06-16 15:04:05,081 ERROR 25900 [-/127.0.0.1/-/5ms POST /user] nodejs.SequelizeValidationError: Validation error: bbb
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"bbb","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"8561c81867684520bd2c6c09956ab4c3","name":" ","age":25,"updatedAt":"2021-06-16T07:04:05.078Z","createdAt":"2021-06-16T07:04:05.078Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"bbb"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 25900
+hostname: IT-C20111420Z
+
+2021-06-16 15:04:08,059 ERROR 26028 [-/127.0.0.1/-/43ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"221480f6be514f56aa56307363b628e8","name":" ","age":25,"updatedAt":"2021-06-16T07:04:08.053Z","createdAt":"2021-06-16T07:04:08.053Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 26028
+hostname: IT-C20111420Z
+
+2021-06-16 15:09:55,910 ERROR 26028 [-/10.195.11.66/-/5ms POST /user] nodejs.SequelizeValidationError: notNull Violation: 姓名必須填寫
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"姓名必須填寫","type":"notNull Violation","path":"name","value":null,"origin":"CORE","instance":{"id":"77975d6822d1405fb00aba94e97ad155","age":20,"updatedAt":"2021-06-16T07:09:55.907Z","createdAt":"2021-06-16T07:09:55.907Z"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 26028
+hostname: IT-C20111420Z
+
+2021-06-16 15:10:01,558 ERROR 26028 [-/10.195.11.66/-/5ms POST /user] nodejs.SequelizeValidationError: notNull Violation: 姓名必須填寫
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"姓名必須填寫","type":"notNull Violation","path":"name","value":null,"origin":"CORE","instance":{"id":"5b11d00cd99e433292ffb6a11f0938df","age":20,"updatedAt":"2021-06-16T07:10:01.554Z","createdAt":"2021-06-16T07:10:01.554Z"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 26028
+hostname: IT-C20111420Z
+
+2021-06-16 15:11:11,440 ERROR 26028 [-/10.195.11.66/-/5ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"ab8f795f3be9496a8fb98454f9f978cb","age":20,"name":" ","updatedAt":"2021-06-16T07:11:11.436Z","createdAt":"2021-06-16T07:11:11.436Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 26028
+hostname: IT-C20111420Z
+
+2021-06-16 15:11:57,918 ERROR 26028 [-/10.195.11.66/-/6ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"fb9ec2efe64f495abf1681fba50b878b","age":20,"name":" ","updatedAt":"2021-06-16T07:11:57.915Z","createdAt":"2021-06-16T07:11:57.915Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 26028
+hostname: IT-C20111420Z
+
+2021-06-16 15:12:48,926 ERROR 26028 [-/10.195.11.66/-/4ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"cfa9a2522c174359957276aa11680d57","age":20,"name":" ","updatedAt":"2021-06-16T07:12:48.923Z","createdAt":"2021-06-16T07:12:48.923Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 26028
+hostname: IT-C20111420Z
+
+2021-06-16 15:12:57,846 ERROR 26028 [-/10.195.11.66/-/4ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"71b3690e3d6a4fdfb94f8103859de293","age":20,"name":" ","updatedAt":"2021-06-16T07:12:57.842Z","createdAt":"2021-06-16T07:12:57.842Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 26028
+hostname: IT-C20111420Z
+
+2021-06-16 15:13:16,452 ERROR 26028 [-/10.195.11.66/-/6ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"2da32273f3384a58aff53ce9cc55ecf1","age":20,"name":" ","updatedAt":"2021-06-16T07:13:16.448Z","createdAt":"2021-06-16T07:13:16.448Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 26028
+hostname: IT-C20111420Z
+
+2021-06-16 15:14:58,656 ERROR 26028 [-/10.195.11.66/-/5ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"5013c9460447489495f5dbf8dbcec693","age":20,"name":" ","updatedAt":"2021-06-16T07:14:58.653Z","createdAt":"2021-06-16T07:14:58.653Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 26028
+hostname: IT-C20111420Z
+
+2021-06-16 15:30:04,234 ERROR 27288 [-/127.0.0.1/-/71ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"c4e4452e2f244757a8901fdbcca21086","name":" ","age":25,"updatedAt":"2021-06-16T07:30:04.226Z","createdAt":"2021-06-16T07:30:04.226Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 27288
+hostname: IT-C20111420Z
+
+2021-06-16 15:33:42,053 ERROR 24756 [-/127.0.0.1/-/62ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async errorHandler (C:\Users\H2103671\Desktop\node\sequelize\app\middleware\error_handler.js:4:7)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"7db5656716eb43dbb379fbf311c9dc9a","name":" ","age":25,"updatedAt":"2021-06-16T07:33:42.049Z","createdAt":"2021-06-16T07:33:42.049Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 24756
+hostname: IT-C20111420Z
+
+2021-06-16 15:34:31,847 ERROR 18528 [-/127.0.0.1/-/30ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async errorHandler (C:\Users\H2103671\Desktop\node\sequelize\app\middleware\error_handler.js:4:7)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"1a60cbe78e6445e096d1fd0be9ed5c5f","name":" ","age":25,"updatedAt":"2021-06-16T07:34:31.842Z","createdAt":"2021-06-16T07:34:31.842Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 18528
+hostname: IT-C20111420Z
+
+2021-06-16 15:36:08,242 ERROR 26620 [-/127.0.0.1/-/36ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async errorHandler (C:\Users\H2103671\Desktop\node\sequelize\app\middleware\error_handler.js:4:7)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"a86d071f94a74ffebffc25e75fc3afd6","name":" ","age":25,"updatedAt":"2021-06-16T07:36:08.238Z","createdAt":"2021-06-16T07:36:08.238Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 26620
+hostname: IT-C20111420Z
+
+2021-06-16 15:40:16,152 ERROR 25104 nodejs.ClusterClientNoResponseError: client no response in 70177ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (C:\Users\H2103671\Desktop\node\sequelize\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+name: "ClusterClientNoResponseError"
+pid: 25104
+hostname: IT-C20111420Z
+
+2021-06-16 15:39:08,416 ERROR 26620 [-/127.0.0.1/-/7ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async errorHandler (C:\Users\H2103671\Desktop\node\sequelize\app\middleware\error_handler.js:4:7)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"b489c0b80a914a01b9cfc556fe6f7f7f","name":" ","age":25,"updatedAt":"2021-06-16T07:39:08.412Z","createdAt":"2021-06-16T07:39:08.412Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 26620
+hostname: IT-C20111420Z
+
+2021-06-16 15:42:59,122 ERROR 26620 nodejs.ECONNABORTEDError: write ECONNABORTED (address: 127.0.0.1:59697)
+    at afterWriteDispatched (internal/stream_base_commons.js:156:25)
+    at writeGeneric (internal/stream_base_commons.js:147:3)
+    at Socket._writeGeneric (net.js:785:11)
+    at Socket._write (net.js:797:8)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at Socket.Writable.write (internal/streams/writable.js:303:10)
+    at Follower.sendHeartBeat (C:\Users\H2103671\Desktop\node\sequelize\node_modules\tcp-base\lib\base.js:105:18)
+    at Timeout._onTimeout (C:\Users\H2103671\Desktop\node\sequelize\node_modules\tcp-base\lib\base.js:437:12)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+errno: -4079
+code: "ECONNABORTED"
+syscall: "write"
+name: "ECONNABORTEDError"
+pid: 26620
+hostname: IT-C20111420Z
+
+2021-06-16 15:48:27,510 ERROR 25656 [-/127.0.0.1/-/35ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"951bf3c260c34497991818246b751eaf","name":" ","age":25,"updatedAt":"2021-06-16T07:48:27.504Z","createdAt":"2021-06-16T07:48:27.504Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 25656
+hostname: IT-C20111420Z
+
+2021-06-16 15:48:35,560 ERROR 25656 [-/10.195.11.66/-/5ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"d4711c93bf824b5da8dbca0d6efcbc20","age":20,"name":" ","updatedAt":"2021-06-16T07:48:35.556Z","createdAt":"2021-06-16T07:48:35.556Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 25656
+hostname: IT-C20111420Z
+
+2021-06-16 15:49:01,551 ERROR 23864 [-/10.195.11.66/-/12ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async errorHandler (C:\Users\H2103671\Desktop\node\sequelize\app\middleware\error_handler.js:4:7)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"d5957bc7cbd94cbdaa67608a958c5738","age":20,"name":" ","updatedAt":"2021-06-16T07:49:01.544Z","createdAt":"2021-06-16T07:49:01.544Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 23864
+hostname: IT-C20111420Z
+
+2021-06-16 15:49:23,643 ERROR 21068 [-/10.195.11.66/-/9ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async errorHandler (C:\Users\H2103671\Desktop\node\sequelize\app\middleware\error_handler.js:4:7)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"638e7d93598e491f8e99dd960db862d5","age":20,"name":" ","updatedAt":"2021-06-16T07:49:23.638Z","createdAt":"2021-06-16T07:49:23.638Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 21068
+hostname: IT-C20111420Z
+
+2021-06-16 15:49:23,648 ERROR 21068 [-/10.195.11.66/-/15ms POST /user] nodejs.ReferenceError: status is not defined
+    at errorHandler (C:\Users\H2103671\Desktop\node\sequelize\app\middleware\error_handler.js:11:21)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\koa-static-cache\index.js:39:63
+
+pid: 21068
+hostname: IT-C20111420Z
+
+2021-06-16 15:50:56,684 ERROR 24032 [-/10.195.11.66/-/15ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async errorHandler (C:\Users\H2103671\Desktop\node\sequelize\app\middleware\error_handler.js:4:7)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"2d4d279fa09f4827a9a5ac4df70185dd","age":20,"name":" ","updatedAt":"2021-06-16T07:50:56.676Z","createdAt":"2021-06-16T07:50:56.676Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 24032
+hostname: IT-C20111420Z
+
+2021-06-16 15:51:29,914 ERROR 24032 [-/10.195.11.66/-/5ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async errorHandler (C:\Users\H2103671\Desktop\node\sequelize\app\middleware\error_handler.js:4:7)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"692092fa867e4dd5bdeea49048c1c58c","age":20,"name":" ","updatedAt":"2021-06-16T07:51:29.912Z","createdAt":"2021-06-16T07:51:29.912Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 24032
+hostname: IT-C20111420Z
+
+2021-06-16 15:51:37,640 ERROR 24032 [-/10.195.11.66/-/5ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async errorHandler (C:\Users\H2103671\Desktop\node\sequelize\app\middleware\error_handler.js:4:7)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"6ce0aefa2848455e9d559a6d5c6f9c75","age":20,"name":" ","updatedAt":"2021-06-16T07:51:37.636Z","createdAt":"2021-06-16T07:51:37.636Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 24032
+hostname: IT-C20111420Z
+
+2021-06-16 15:51:47,761 ERROR 24032 [-/10.195.11.66/-/5ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async errorHandler (C:\Users\H2103671\Desktop\node\sequelize\app\middleware\error_handler.js:4:7)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"3e39a92fbb664392914cd65ce4dc82d1","age":20,"name":" ","updatedAt":"2021-06-16T07:51:47.757Z","createdAt":"2021-06-16T07:51:47.757Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 24032
+hostname: IT-C20111420Z
+
+2021-06-16 15:51:57,318 ERROR 24032 [-/10.195.11.66/-/5ms POST /user] nodejs.SequelizeValidationError: Validation error: 姓名不能為空
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async errorHandler (C:\Users\H2103671\Desktop\node\sequelize\app\middleware\error_handler.js:4:7)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+name: "SequelizeValidationError"
+errors: [{"message":"姓名不能為空","type":"Validation error","path":"name","value":" ","origin":"FUNCTION","instance":{"id":"cf67cec75a154b5c8536d65a842b9243","age":20,"name":" ","updatedAt":"2021-06-16T07:51:57.314Z","createdAt":"2021-06-16T07:51:57.314Z"},"validatorKey":"notEmpty","validatorName":"notEmpty","validatorArgs":[{"msg":"姓名不能為空"}],"original":{"validatorName":"notEmpty","validatorArgs":"~0~validatorArgs"}}]
+pid: 24032
+hostname: IT-C20111420Z
+
+2021-06-16 16:08:48,629 ERROR 23736 [-/127.0.0.1/-/92ms POST /user] nodejs.SequelizeValidationError: notNull Violation: user.birthday cannot be null
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"user.birthday cannot be null","type":"notNull Violation","path":"birthday","value":null,"origin":"CORE","instance":{"id":"237b4e6db5f84d469d43f31e46b8419c","name":"zs","age":25,"updatedAt":"2021-06-16T08:08:48.623Z","createdAt":"2021-06-16T08:08:48.623Z"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 23736
+hostname: IT-C20111420Z
+
+2021-06-16 16:09:02,085 ERROR 23736 [-/127.0.0.1/-/25ms POST /user] nodejs.SequelizeDatabaseError: Incorrect datetime value: 'Invalid date' for column 'birthday' at row 1
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_TRUNCATED_WRONG_VALUE","errno":1292,"sqlState":"22007","sqlMessage":"Incorrect datetime value: 'Invalid date' for column 'birthday' at row 1","sql":"INSERT INTO `user` (`id`,`name`,`age`,`birthday`,`created_at`,`updated_at`) VALUES (?,?,?,?,?,?);","parameters":["472d0eaaedff4b4987cec07bcd21bd69","zs",25,"Invalid date","2021-06-16 16:09:02","2021-06-16 16:09:02"]}
+original: {"code":"ER_TRUNCATED_WRONG_VALUE","errno":1292,"sqlState":"22007","sqlMessage":"Incorrect datetime value: 'Invalid date' for column 'birthday' at row 1","sql":"INSERT INTO `user` (`id`,`name`,`age`,`birthday`,`created_at`,`updated_at`) VALUES (?,?,?,?,?,?);","parameters":["472d0eaaedff4b4987cec07bcd21bd69","zs",25,"Invalid date","2021-06-16 16:09:02","2021-06-16 16:09:02"]}
+sql: "INSERT INTO `user` (`id`,`name`,`age`,`birthday`,`created_at`,`updated_at`) VALUES (?,?,?,?,?,?);"
+parameters: ["472d0eaaedff4b4987cec07bcd21bd69","zs",25,"Invalid date","2021-06-16 16:09:02","2021-06-16 16:09:02"]
+pid: 23736
+hostname: IT-C20111420Z
+
+2021-06-16 16:15:43,628 ERROR 26736 [-/127.0.0.1/-/69ms POST /user] nodejs.SequelizeValidationError: Validation error: Expected string but received NOW.
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"Expected string but received NOW.","type":"Validation error","path":"birthday","value":"2022-06-15T00:00:00.000Z","origin":"FUNCTION","instance":{"id":"0d3ed4794d7546e3a2d9659d9dd73788","name":"zs","age":25,"birthday":"2022-06-15T00:00:00.000Z","updatedAt":"2021-06-16T08:15:43.622Z","createdAt":"2021-06-16T08:15:43.622Z"},"validatorKey":null,"validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 26736
+hostname: IT-C20111420Z
+
+2021-06-16 16:17:51,818 ERROR 27840 [-/127.0.0.1/-/86ms POST /user] nodejs.SequelizeValidationError: Validation error: Validation isBefore on birthday failed
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isBefore on birthday failed","type":"Validation error","path":"birthday","value":"2022-06-15T00:00:00.000Z","origin":"FUNCTION","instance":{"id":"23b0937e3a3d4e04815b082200f02c6d","name":"zs","age":25,"birthday":"2022-06-15T00:00:00.000Z","updatedAt":"2021-06-16T08:17:51.813Z","createdAt":"2021-06-16T08:17:51.813Z"},"validatorKey":"isBefore","validatorName":"isBefore","validatorArgs":["2021-06-16"],"original":{"validatorName":"isBefore","validatorArgs":"~0~validatorArgs"}}]
+pid: 27840
+hostname: IT-C20111420Z
+
+2021-06-16 16:22:16,722 ERROR 25260 [-/127.0.0.1/-/47ms POST /user] nodejs.SequelizeValidationError: Validation error: Expected string but received Date.
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"Expected string but received Date.","type":"Validation error","path":"birthday","value":"2022-06-15T00:00:00.000Z","origin":"FUNCTION","instance":{"id":"254af6bb16c642a7b9a88e03a9e456cd","name":"zs","age":25,"birthday":"2022-06-15T00:00:00.000Z","updatedAt":"2021-06-16T08:22:16.717Z","createdAt":"2021-06-16T08:22:16.717Z"},"validatorKey":null,"validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 25260
+hostname: IT-C20111420Z
+
+2021-06-16 16:28:52,223 ERROR 25260 [-/127.0.0.1/-/7ms POST /user] nodejs.SequelizeValidationError: Validation error: Expected string but received Date.
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"Expected string but received Date.","type":"Validation error","path":"birthday","value":"2022-06-15T00:00:00.000Z","origin":"FUNCTION","instance":{"id":"b08d28beb29f41f88f126b443d5281eb","name":"zs","age":25,"birthday":"2022-06-15T00:00:00.000Z","updatedAt":"2021-06-16T08:28:52.219Z","createdAt":"2021-06-16T08:28:52.219Z"},"validatorKey":null,"validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 25260
+hostname: IT-C20111420Z
+
+2021-06-16 16:28:55,261 ERROR 28052 [-/127.0.0.1/-/110ms POST /user] nodejs.SequelizeValidationError: Validation error: Validation isBefore on birthday failed
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isBefore on birthday failed","type":"Validation error","path":"birthday","value":"2022-06-15T00:00:00.000Z","origin":"FUNCTION","instance":{"id":"800adc36fa9747578c412400d31bb9b4","name":"zs","age":25,"birthday":"2022-06-15T00:00:00.000Z","updatedAt":"2021-06-16T08:28:55.255Z","createdAt":"2021-06-16T08:28:55.255Z"},"validatorKey":"isBefore","validatorName":"isBefore","validatorArgs":["2021-06-16"],"original":{"validatorName":"isBefore","validatorArgs":"~0~validatorArgs"}}]
+pid: 28052
+hostname: IT-C20111420Z
+
+2021-06-16 16:35:08,001 ERROR 28052 [-/127.0.0.1/-/6ms POST /user] nodejs.SequelizeValidationError: Validation error: Validation isIn on sex failed,
+Validation error: Invalid validator function: msg,
+Validation error: Validation isBefore on birthday failed
+Validation error: Invalid validator function: msg,
+Validation error: Validation isBefore on birthday failed
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isIn on sex failed","type":"Validation error","path":"sex","value":"2","origin":"FUNCTION","instance":{"id":"234c6e4d3c434d26ae8c6e6115814035","name":"zs","age":25,"birthday":"2022-06-15T00:00:00.000Z","sex":"2","updatedAt":"2021-06-16T08:35:07.997Z","createdAt":"2021-06-16T08:35:07.997Z"},"validatorKey":"isIn","validatorName":"isIn","validatorArgs":[["0","1"]],"original":{"validatorName":"isIn","validatorArgs":"~0~validatorArgs"}},{"message":"Invalid validator function: msg","type":"Validation error","path":"sex","value":"2","origin":"FUNCTION","instance":{"id":"234c6e4d3c434d26ae8c6e6115814035","name":"zs","age":25,"birthday":"2022-06-15T00:00:00.000Z","sex":"2","updatedAt":"2021-06-16T08:35:07.997Z","createdAt":"2021-06-16T08:35:07.997Z"},"validatorKey":null,"validatorName":null,"validatorArgs":[],"original":{}},{"message":"Validation isBefore on birthday failed","type":"Validation error","path":"birthday","value":"2022-06-15T00:00:00.000Z","origin":"FUNCTION","instance":{"id":"234c6e4d3c434d26ae8c6e6115814035","name":"zs","age":25,"birthday":"2022-06-15T00:00:00.000Z","sex":"2","updatedAt":"2021-06-16T08:35:07.997Z","createdAt":"2021-06-16T08:35:07.997Z"},"validatorKey":"isBefore","validatorName":"isBefore","validatorArgs":["2021-06-16"],"original":{"validatorName":"isBefore","validatorArgs":"~2~validatorArgs"}}]
+pid: 28052
+hostname: IT-C20111420Z
+
+2021-06-16 16:35:19,034 ERROR 28052 [-/127.0.0.1/-/4ms POST /user] nodejs.SequelizeValidationError: Validation error: Validation isIn on sex failed,
+Validation error: Invalid validator function: msg
+Validation error: Invalid validator function: msg
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isIn on sex failed","type":"Validation error","path":"sex","value":"2","origin":"FUNCTION","instance":{"id":"21c7207e5ef04208aa9d3f9297edda2a","name":"zs","age":25,"birthday":"2020-06-15T00:00:00.000Z","sex":"2","updatedAt":"2021-06-16T08:35:19.031Z","createdAt":"2021-06-16T08:35:19.031Z"},"validatorKey":"isIn","validatorName":"isIn","validatorArgs":[["0","1"]],"original":{"validatorName":"isIn","validatorArgs":"~0~validatorArgs"}},{"message":"Invalid validator function: msg","type":"Validation error","path":"sex","value":"2","origin":"FUNCTION","instance":{"id":"21c7207e5ef04208aa9d3f9297edda2a","name":"zs","age":25,"birthday":"2020-06-15T00:00:00.000Z","sex":"2","updatedAt":"2021-06-16T08:35:19.031Z","createdAt":"2021-06-16T08:35:19.031Z"},"validatorKey":null,"validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 28052
+hostname: IT-C20111420Z
+
+2021-06-16 16:36:00,837 ERROR 28052 [-/127.0.0.1/-/4ms POST /user] nodejs.SequelizeValidationError: Validation error: Validation isIn on sex failed,
+Validation error: Invalid validator function: msg
+Validation error: Invalid validator function: msg
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"Validation isIn on sex failed","type":"Validation error","path":"sex","value":"2","origin":"FUNCTION","instance":{"id":"038c5c78df654a50b0dbd29469868677","name":"zs","age":25,"birthday":"2020-06-15T00:00:00.000Z","sex":"2","updatedAt":"2021-06-16T08:36:00.834Z","createdAt":"2021-06-16T08:36:00.834Z"},"validatorKey":"isIn","validatorName":"isIn","validatorArgs":[["0","1"]],"original":{"validatorName":"isIn","validatorArgs":"~0~validatorArgs"}},{"message":"Invalid validator function: msg","type":"Validation error","path":"sex","value":"2","origin":"FUNCTION","instance":{"id":"038c5c78df654a50b0dbd29469868677","name":"zs","age":25,"birthday":"2020-06-15T00:00:00.000Z","sex":"2","updatedAt":"2021-06-16T08:36:00.834Z","createdAt":"2021-06-16T08:36:00.834Z"},"validatorKey":null,"validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 28052
+hostname: IT-C20111420Z
+
+2021-06-16 16:36:07,790 ERROR 28052 [-/127.0.0.1/-/4ms POST /user] nodejs.SequelizeValidationError: Validation error: Invalid validator function: msg
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"Invalid validator function: msg","type":"Validation error","path":"sex","value":"1","origin":"FUNCTION","instance":{"id":"a1908892855f4693bd050fef0c2b56db","name":"zs","age":25,"birthday":"2020-06-15T00:00:00.000Z","sex":"1","updatedAt":"2021-06-16T08:36:07.787Z","createdAt":"2021-06-16T08:36:07.787Z"},"validatorKey":null,"validatorName":null,"validatorArgs":[],"original":{}}]
+pid: 28052
+hostname: IT-C20111420Z
+
+2021-06-16 16:37:14,822 ERROR 12476 [-/127.0.0.1/-/68ms POST /user] nodejs.SequelizeValidationError: Validation error: 性別只能是男或者女
+    at InstanceValidator._validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:78:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:111:7)
+    at async InstanceValidator.validate (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\instance-validator.js:93:12)
+    at async model.save (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:3877:7)
+    at async Function.create (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2207:12)
+    at async UserService.create (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:20:18)
+    at async UserController.create (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:35:16)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+name: "SequelizeValidationError"
+errors: [{"message":"性別只能是男或者女","type":"Validation error","path":"sex","value":"2","origin":"FUNCTION","instance":{"id":"d55ab9673d06438a9d88ba7cddf1f8ee","name":"zs","age":25,"birthday":"2020-06-15T00:00:00.000Z","sex":"2","updatedAt":"2021-06-16T08:37:14.816Z","createdAt":"2021-06-16T08:37:14.816Z"},"validatorKey":"isIn","validatorName":"isIn","validatorArgs":[["0","1"]],"original":{"validatorName":"isIn","validatorArgs":"~0~validatorArgs"}}]
+pid: 12476
+hostname: IT-C20111420Z
+
+2021-06-16 17:02:28,926 ERROR 26808 [-/127.0.0.1/-/25ms GET /user] nodejs.SequelizeDatabaseError: Unknown column 'user.createAt' in 'order clause'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.list (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:10:29)
+    at async UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:26:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user.createAt' in 'order clause'","sql":"SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%' ORDER BY `user`.`createAt` DESC;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user.createAt' in 'order clause'","sql":"SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%' ORDER BY `user`.`createAt` DESC;"}
+sql: "SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%' ORDER BY `user`.`createAt` DESC;"
+parameters: undefined
+pid: 26808
+hostname: IT-C20111420Z
+
+2021-06-16 17:02:47,492 ERROR 12800 [-/127.0.0.1/-/25ms GET /user] nodejs.SequelizeDatabaseError: Unknown column 'user.create_at' in 'order clause'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.list (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:10:29)
+    at async UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:26:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user.create_at' in 'order clause'","sql":"SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%' ORDER BY `user`.`create_at` DESC;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user.create_at' in 'order clause'","sql":"SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%' ORDER BY `user`.`create_at` DESC;"}
+sql: "SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%' ORDER BY `user`.`create_at` DESC;"
+parameters: undefined
+pid: 12800
+hostname: IT-C20111420Z
+
+2021-06-16 17:02:51,443 ERROR 12800 [-/127.0.0.1/-/8ms GET /user] nodejs.SequelizeDatabaseError: Unknown column 'user.create_at' in 'order clause'
+    at Query.formatError (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:265:16)
+    at Query.run (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.select (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\dialects\abstract\query-interface.js:953:12)
+    at async Function.findAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:1753:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (C:\Users\H2103671\Desktop\node\sequelize\node_modules\sequelize\lib\model.js:2085:27)
+    at async UserService.list (C:\Users\H2103671\Desktop\node\sequelize\app\service\user.js:10:29)
+    at async UserController.index (C:\Users\H2103671\Desktop\node\sequelize\app\controller\user.js:26:16)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user.create_at' in 'order clause'","sql":"SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%' ORDER BY `user`.`create_at` DESC;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'user.create_at' in 'order clause'","sql":"SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%' ORDER BY `user`.`create_at` DESC;"}
+sql: "SELECT `id`, `name`, `age`, `address`, `email`, `sex`, `birthday`, `dept_name` AS `deptName`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `user` AS `user` WHERE `user`.`name` LIKE '%%' ORDER BY `user`.`create_at` DESC;"
+parameters: undefined
+pid: 12800
+hostname: IT-C20111420Z
+

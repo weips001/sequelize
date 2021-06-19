@@ -1,0 +1,489 @@
+2021-06-11 04:29:59,613 INFO 15564 [Job#16233569996113088093822569001] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js executing by app
+2021-06-11 04:29:59,619 INFO 15564 [Job#16233569996113088093822569001] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js execute succeed, used 6ms. 
+2021-06-11 04:29:59,616 INFO 3472 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 86400388ms at 2021-06-12 04:30:00.004
+2021-06-11 08:20:24,903 INFO 15808 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 08:20:24,903 INFO 15808 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 08:20:24,903 INFO 15808 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 08:20:26,114 INFO 2348 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 72573890ms at 2021-06-12 04:30:00.003
+2021-06-11 08:20:26,115 INFO 2348 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 56373885ms at 2021-06-12 00:00:00.000
+2021-06-11 08:20:26,116 INFO 2348 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 56374885ms at 2021-06-12 00:00:01.001
+2021-06-11 08:33:08,864 INFO 7580 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 08:33:08,864 INFO 7580 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 08:33:08,864 INFO 7580 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 08:33:29,769 INFO 12808 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 08:33:29,769 INFO 12808 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 08:33:29,769 INFO 12808 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 08:33:39,150 INFO 10016 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 08:33:39,150 INFO 10016 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 08:33:39,150 INFO 10016 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 08:35:10,348 INFO 7508 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 08:35:10,348 INFO 7508 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 08:35:10,348 INFO 7508 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 08:36:00,256 INFO 16596 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 08:36:00,256 INFO 16596 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 08:36:00,256 INFO 16596 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 08:41:12,692 INFO 11752 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 08:41:12,692 INFO 11752 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 08:41:12,692 INFO 11752 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 08:57:34,173 INFO 14504 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 08:57:34,173 INFO 14504 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 08:57:34,173 INFO 14504 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 09:04:46,046 INFO 13696 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 09:04:46,046 INFO 13696 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 09:04:46,046 INFO 13696 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 09:05:17,721 INFO 9696 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 09:05:17,721 INFO 9696 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 09:05:17,721 INFO 9696 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 09:05:21,178 INFO 12920 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 09:05:21,178 INFO 12920 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 09:05:21,178 INFO 12920 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 09:06:11,382 INFO 15580 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 09:06:11,382 INFO 15580 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 09:06:11,382 INFO 15580 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 09:06:36,371 INFO 5660 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 09:06:36,371 INFO 5660 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 09:06:36,371 INFO 5660 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 09:16:27,737 INFO 11480 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 09:16:27,737 INFO 11480 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 09:16:27,737 INFO 11480 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 09:24:17,847 INFO 17076 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 09:24:17,847 INFO 17076 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 09:24:17,847 INFO 17076 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 09:25:18,277 INFO 11292 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 09:25:18,277 INFO 11292 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 09:25:18,277 INFO 11292 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 09:26:02,540 INFO 15072 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 09:26:02,540 INFO 15072 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 09:26:02,540 INFO 15072 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 09:26:32,607 INFO 2768 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 09:26:32,607 INFO 2768 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 09:26:32,607 INFO 2768 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 09:26:58,128 INFO 9144 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 09:26:58,128 INFO 9144 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 09:26:58,128 INFO 9144 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 09:33:04,724 INFO 13176 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 09:33:04,724 INFO 13176 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 09:33:04,724 INFO 13176 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 09:33:53,750 INFO 12292 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 09:33:53,750 INFO 12292 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 09:33:53,750 INFO 12292 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 09:50:03,928 INFO 5852 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 09:50:03,928 INFO 5852 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 09:50:03,928 INFO 5852 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 09:52:02,783 INFO 17096 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 09:52:02,783 INFO 17096 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 09:52:02,783 INFO 17096 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 09:52:20,529 INFO 12320 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 09:52:20,529 INFO 12320 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 09:52:20,529 INFO 12320 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 10:06:04,626 INFO 12620 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 10:06:04,626 INFO 12620 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 10:06:04,626 INFO 12620 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 10:06:15,132 INFO 12456 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 10:06:15,132 INFO 12456 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 10:06:15,132 INFO 12456 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 10:06:39,756 INFO 13396 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 10:06:39,756 INFO 13396 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 10:06:39,756 INFO 13396 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 10:13:56,828 INFO 16512 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 10:13:56,828 INFO 16512 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 10:13:56,828 INFO 16512 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 10:15:32,731 INFO 9372 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 10:15:32,732 INFO 9372 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 10:15:32,732 INFO 9372 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 10:16:15,411 INFO 12196 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 10:16:15,411 INFO 12196 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 10:16:15,411 INFO 12196 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 10:17:21,012 INFO 5360 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 10:17:21,012 INFO 5360 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 10:17:21,012 INFO 5360 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 10:18:01,499 INFO 15756 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 10:18:01,499 INFO 15756 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 10:18:01,499 INFO 15756 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 10:31:53,643 INFO 13124 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 10:31:53,643 INFO 13124 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 10:31:53,643 INFO 13124 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 10:31:54,918 INFO 11944 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 64685084ms at 2021-06-12 04:30:00.002
+2021-06-11 10:31:54,920 INFO 11944 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 48485081ms at 2021-06-12 00:00:00.001
+2021-06-11 10:31:54,920 INFO 11944 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 48486080ms at 2021-06-12 00:00:01.000
+2021-06-11 10:33:43,994 INFO 16824 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 10:33:43,994 INFO 16824 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 10:33:43,994 INFO 16824 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 10:33:46,609 INFO 9368 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 64573393ms at 2021-06-12 04:30:00.002
+2021-06-11 10:33:46,610 INFO 9368 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 48373391ms at 2021-06-12 00:00:00.001
+2021-06-11 10:33:46,610 INFO 9368 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 48374390ms at 2021-06-12 00:00:01.000
+2021-06-11 13:59:55,440 INFO 13348 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 13:59:55,441 INFO 13348 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 13:59:55,441 INFO 13348 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 14:01:53,946 INFO 9212 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 14:01:53,946 INFO 9212 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 14:01:53,946 INFO 9212 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 14:02:13,645 INFO 11736 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 14:02:13,645 INFO 11736 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 14:02:13,645 INFO 11736 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 14:12:08,899 INFO 15288 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 14:12:08,899 INFO 15288 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 14:12:08,899 INFO 15288 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 14:18:12,869 INFO 12428 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 14:18:12,869 INFO 12428 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 14:18:12,869 INFO 12428 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 14:18:42,008 INFO 1900 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 14:18:42,008 INFO 1900 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 14:18:42,008 INFO 1900 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 14:18:55,445 INFO 7668 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 14:18:55,445 INFO 7668 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 14:18:55,445 INFO 7668 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 14:21:11,312 INFO 12056 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 14:21:11,312 INFO 12056 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 14:21:11,312 INFO 12056 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 14:21:30,642 INFO 17304 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 14:21:30,642 INFO 17304 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 14:21:30,642 INFO 17304 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 15:06:14,267 INFO 10940 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 15:06:14,267 INFO 10940 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 15:06:14,267 INFO 10940 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 15:07:56,512 INFO 12208 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 15:07:56,512 INFO 12208 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 15:07:56,512 INFO 12208 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 15:08:01,606 INFO 13580 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 15:08:01,606 INFO 13580 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 15:08:01,606 INFO 13580 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 15:12:26,362 INFO 6048 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 15:12:26,362 INFO 6048 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 15:12:26,362 INFO 6048 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 15:12:31,213 INFO 14092 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 15:12:31,213 INFO 14092 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 15:12:31,213 INFO 14092 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 15:12:45,075 INFO 12788 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 15:12:45,075 INFO 12788 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 15:12:45,075 INFO 12788 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 15:36:23,762 INFO 16756 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 15:36:23,762 INFO 16756 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 15:36:23,762 INFO 16756 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 15:37:05,035 INFO 16596 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 15:37:05,035 INFO 16596 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 15:37:05,035 INFO 16596 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 15:37:06,166 INFO 4208 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 46373836ms at 2021-06-12 04:30:00.002
+2021-06-11 15:37:06,166 INFO 4208 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 30173834ms at 2021-06-12 00:00:00.000
+2021-06-11 15:37:06,167 INFO 4208 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 30174834ms at 2021-06-12 00:00:01.001
+2021-06-11 15:42:14,493 INFO 7544 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 15:42:14,493 INFO 7544 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 15:42:14,493 INFO 7544 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 15:42:31,251 INFO 632 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 15:42:31,251 INFO 632 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 15:42:31,251 INFO 632 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 15:42:32,212 INFO 9560 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 46047790ms at 2021-06-12 04:30:00.002
+2021-06-11 15:42:32,212 INFO 9560 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 29847788ms at 2021-06-12 00:00:00.000
+2021-06-11 15:42:32,213 INFO 9560 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 29848787ms at 2021-06-12 00:00:01.000
+2021-06-11 15:47:23,110 INFO 14524 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 15:47:23,110 INFO 14524 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 15:47:23,110 INFO 14524 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 15:47:24,293 INFO 14340 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 45755710ms at 2021-06-12 04:30:00.003
+2021-06-11 15:47:24,294 INFO 14340 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 29555706ms at 2021-06-12 00:00:00.000
+2021-06-11 15:47:24,295 INFO 14340 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 29556706ms at 2021-06-12 00:00:01.001
+2021-06-11 16:05:46,619 INFO 10152 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 16:05:46,619 INFO 10152 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 16:05:46,619 INFO 10152 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 16:12:58,939 INFO 10268 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 16:12:58,939 INFO 10268 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 16:12:58,939 INFO 10268 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 16:13:00,626 INFO 10868 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 44219376ms at 2021-06-12 04:30:00.002
+2021-06-11 16:13:00,627 INFO 10868 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 28019374ms at 2021-06-12 00:00:00.001
+2021-06-11 16:13:00,627 INFO 10868 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 28020373ms at 2021-06-12 00:00:01.000
+2021-06-11 16:13:03,492 INFO 9636 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 16:13:03,492 INFO 9636 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 16:13:03,492 INFO 9636 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 16:13:07,633 INFO 10056 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 16:13:07,633 INFO 10056 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 16:13:07,633 INFO 10056 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 16:13:14,584 INFO 13700 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 16:13:14,584 INFO 13700 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 16:13:14,584 INFO 13700 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 16:13:20,154 INFO 10964 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 16:13:20,154 INFO 10964 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 16:13:20,154 INFO 10964 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 16:15:03,109 INFO 1668 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 16:15:03,109 INFO 1668 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 16:15:03,109 INFO 1668 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 16:15:22,118 INFO 14212 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 16:15:22,118 INFO 14212 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 16:15:22,118 INFO 14212 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 16:30:53,682 INFO 9832 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 16:30:53,682 INFO 9832 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 16:30:53,682 INFO 9832 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 16:30:55,247 INFO 14252 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 43144755ms at 2021-06-12 04:30:00.002
+2021-06-11 16:30:55,248 INFO 14252 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 26944753ms at 2021-06-12 00:00:00.001
+2021-06-11 16:30:55,249 INFO 14252 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 26945752ms at 2021-06-12 00:00:01.001
+2021-06-11 16:40:16,774 INFO 10104 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 16:40:16,774 INFO 10104 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 16:40:16,774 INFO 10104 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 16:41:01,549 INFO 15196 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 16:41:01,549 INFO 15196 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 16:41:01,549 INFO 15196 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 16:41:02,632 INFO 7576 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 42537371ms at 2021-06-12 04:30:00.003
+2021-06-11 16:41:02,633 INFO 7576 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 26337367ms at 2021-06-12 00:00:00.000
+2021-06-11 16:41:02,633 INFO 7576 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 26338367ms at 2021-06-12 00:00:01.000
+2021-06-11 16:57:06,710 INFO 16444 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 16:57:06,710 INFO 16444 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 16:57:06,710 INFO 16444 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 16:57:38,635 INFO 12672 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 16:57:38,635 INFO 12672 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 16:57:38,635 INFO 12672 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 16:58:13,886 INFO 10180 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 16:58:13,886 INFO 10180 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 16:58:13,886 INFO 10180 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 16:59:33,152 INFO 16196 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 16:59:33,152 INFO 16196 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 16:59:33,152 INFO 16196 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 16:59:51,302 INFO 16604 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 16:59:51,302 INFO 16604 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 16:59:51,302 INFO 16604 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:00:09,529 INFO 4908 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:00:09,530 INFO 4908 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:00:09,530 INFO 4908 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:00:10,617 INFO 12848 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 41389385ms at 2021-06-12 04:30:00.002
+2021-06-11 17:00:10,617 INFO 12848 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 25189383ms at 2021-06-12 00:00:00.000
+2021-06-11 17:00:10,618 INFO 12848 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 25190383ms at 2021-06-12 00:00:01.001
+2021-06-11 17:01:50,587 INFO 9604 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:01:50,587 INFO 9604 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:01:50,587 INFO 9604 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:03:39,800 INFO 9276 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:03:39,800 INFO 9276 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:03:39,800 INFO 9276 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:03:40,805 INFO 11120 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 41179198ms at 2021-06-12 04:30:00.003
+2021-06-11 17:03:40,806 INFO 11120 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 24979195ms at 2021-06-12 00:00:00.001
+2021-06-11 17:03:40,806 INFO 11120 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 24980194ms at 2021-06-12 00:00:01.000
+2021-06-11 17:05:03,843 INFO 13104 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:05:03,843 INFO 13104 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:05:03,843 INFO 13104 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:05:05,082 INFO 9448 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 41094921ms at 2021-06-12 04:30:00.003
+2021-06-11 17:05:05,082 INFO 9448 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 24894918ms at 2021-06-12 00:00:00.000
+2021-06-11 17:05:05,082 INFO 9448 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 24895918ms at 2021-06-12 00:00:01.000
+2021-06-11 17:06:35,795 INFO 9760 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:06:35,795 INFO 9760 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:06:35,795 INFO 9760 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:07:21,060 INFO 15900 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:07:21,060 INFO 15900 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:07:21,060 INFO 15900 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:07:34,371 INFO 5504 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:07:34,371 INFO 5504 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:07:34,371 INFO 5504 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:09:18,527 INFO 17052 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:09:18,527 INFO 17052 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:09:18,527 INFO 17052 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:09:19,628 INFO 7868 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 40840374ms at 2021-06-12 04:30:00.002
+2021-06-11 17:09:19,629 INFO 7868 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 24640371ms at 2021-06-12 00:00:00.000
+2021-06-11 17:09:19,629 INFO 7868 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 24641371ms at 2021-06-12 00:00:01.000
+2021-06-11 17:21:41,996 INFO 6800 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:21:41,996 INFO 6800 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:21:41,996 INFO 6800 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:21:43,498 INFO 14684 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 40096504ms at 2021-06-12 04:30:00.002
+2021-06-11 17:21:43,498 INFO 14684 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 23896502ms at 2021-06-12 00:00:00.000
+2021-06-11 17:21:43,498 INFO 14684 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 23897502ms at 2021-06-12 00:00:01.000
+2021-06-11 17:23:49,000 INFO 16328 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:23:49,000 INFO 16328 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:23:49,000 INFO 16328 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:25:44,977 INFO 12112 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:25:44,977 INFO 12112 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:25:44,977 INFO 12112 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:35:16,046 INFO 14948 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:35:16,046 INFO 14948 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:35:16,046 INFO 14948 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:35:23,299 INFO 12720 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:35:23,299 INFO 12720 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:35:23,299 INFO 12720 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:35:28,977 INFO 12652 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:35:28,977 INFO 12652 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:35:28,977 INFO 12652 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:35:38,167 INFO 6032 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:35:38,167 INFO 6032 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:35:38,167 INFO 6032 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:35:48,467 INFO 15112 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:35:48,467 INFO 15112 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:35:48,467 INFO 15112 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:36:12,901 INFO 7944 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:36:12,901 INFO 7944 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:36:12,901 INFO 7944 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:36:33,923 INFO 15308 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:36:33,923 INFO 15308 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:36:33,923 INFO 15308 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:36:56,688 INFO 15964 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:36:56,688 INFO 15964 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:36:56,688 INFO 15964 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:37:01,032 INFO 9708 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:37:01,032 INFO 9708 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:37:01,032 INFO 9708 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:37:05,943 INFO 15196 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:37:05,943 INFO 15196 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:37:05,943 INFO 15196 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:37:12,207 INFO 8500 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:37:12,208 INFO 8500 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:37:12,208 INFO 8500 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:38:36,242 INFO 16248 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:38:36,242 INFO 16248 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:38:36,242 INFO 16248 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:39:42,126 INFO 5612 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:39:42,126 INFO 5612 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:39:42,126 INFO 5612 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:40:05,153 INFO 16152 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:40:05,153 INFO 16152 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:40:05,153 INFO 16152 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-11 17:40:09,339 INFO 12344 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-11 17:40:09,339 INFO 12344 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-11 17:40:09,339 INFO 12344 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 14:31:58,508 INFO 23392 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 14:31:58,508 INFO 23392 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 14:31:58,508 INFO 23392 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 14:31:59,437 INFO 25104 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 50280565ms at 2021-06-17 04:30:00.002
+2021-06-16 14:31:59,438 INFO 25104 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 34080562ms at 2021-06-17 00:00:00.000
+2021-06-16 14:31:59,438 INFO 25104 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 34081562ms at 2021-06-17 00:00:01.000
+2021-06-16 14:32:17,518 INFO 23612 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 14:32:17,518 INFO 23612 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 14:32:17,518 INFO 23612 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 14:34:56,030 INFO 25172 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 14:34:56,030 INFO 25172 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 14:34:56,030 INFO 25172 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 14:35:02,493 INFO 9688 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 14:35:02,493 INFO 9688 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 14:35:02,493 INFO 9688 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 14:35:45,053 INFO 22808 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 14:35:45,053 INFO 22808 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 14:35:45,053 INFO 22808 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 14:36:27,702 INFO 19760 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 14:36:27,702 INFO 19760 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 14:36:27,702 INFO 19760 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 14:37:25,877 INFO 25588 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 14:37:25,877 INFO 25588 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 14:37:25,877 INFO 25588 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 14:48:58,706 INFO 25156 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 14:48:58,706 INFO 25156 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 14:48:58,706 INFO 25156 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 14:49:41,816 INFO 26324 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 14:49:41,816 INFO 26324 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 14:49:41,816 INFO 26324 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 14:49:51,512 INFO 23768 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 14:49:51,512 INFO 23768 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 14:49:51,512 INFO 23768 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 14:55:23,216 INFO 23500 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 14:55:23,216 INFO 23500 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 14:55:23,216 INFO 23500 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 14:55:57,812 INFO 22632 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 14:55:57,812 INFO 22632 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 14:55:57,812 INFO 22632 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 15:03:07,917 INFO 25900 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 15:03:07,917 INFO 25900 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 15:03:07,917 INFO 25900 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 15:04:04,745 INFO 26028 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 15:04:04,745 INFO 26028 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 15:04:04,745 INFO 26028 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 15:29:58,672 INFO 27288 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 15:29:58,672 INFO 27288 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 15:29:58,672 INFO 27288 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 15:32:31,652 INFO 21684 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 15:32:31,652 INFO 21684 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 15:32:31,652 INFO 21684 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 15:33:26,768 INFO 24756 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 15:33:26,768 INFO 24756 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 15:33:26,768 INFO 24756 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 15:34:27,736 INFO 18528 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 15:34:27,736 INFO 18528 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 15:34:27,736 INFO 18528 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 15:36:04,814 INFO 26620 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 15:36:04,814 INFO 26620 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 15:36:04,814 INFO 26620 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 15:43:18,793 INFO 25656 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 15:43:18,793 INFO 25656 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 15:43:18,793 INFO 25656 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 15:48:58,162 INFO 23864 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 15:48:58,162 INFO 23864 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 15:48:58,162 INFO 23864 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 15:49:18,855 INFO 21068 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 15:49:18,855 INFO 21068 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 15:49:18,855 INFO 21068 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 15:50:22,365 INFO 24032 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 15:50:22,365 INFO 24032 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 15:50:22,365 INFO 24032 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 15:53:12,562 INFO 26888 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 15:53:12,562 INFO 26888 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 15:53:12,562 INFO 26888 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 15:53:33,050 INFO 9112 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 15:53:33,050 INFO 9112 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 15:53:33,050 INFO 9112 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 15:54:23,158 INFO 26192 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 15:54:23,158 INFO 26192 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 15:54:23,158 INFO 26192 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 15:54:29,969 INFO 26736 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 15:54:29,969 INFO 26736 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 15:54:29,969 INFO 26736 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 16:08:44,601 INFO 23736 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 16:08:44,601 INFO 23736 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 16:08:44,601 INFO 23736 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 16:11:37,121 INFO 23464 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 16:11:37,121 INFO 23464 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 16:11:37,121 INFO 23464 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 16:11:48,685 INFO 21860 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 16:11:48,685 INFO 21860 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 16:11:48,685 INFO 21860 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 16:15:18,098 INFO 25820 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 16:15:18,098 INFO 25820 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 16:15:18,098 INFO 25820 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 16:15:36,892 INFO 26736 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 16:15:36,892 INFO 26736 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 16:15:36,892 INFO 26736 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 16:17:38,219 INFO 27840 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 16:17:38,219 INFO 27840 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 16:17:38,219 INFO 27840 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 16:22:11,219 INFO 25260 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 16:22:11,220 INFO 25260 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 16:22:11,220 INFO 25260 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 16:28:50,203 INFO 28052 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 16:28:50,203 INFO 28052 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 16:28:50,203 INFO 28052 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 16:36:56,437 INFO 24600 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 16:36:56,438 INFO 24600 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 16:36:56,438 INFO 24600 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 16:37:01,046 INFO 23152 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 16:37:01,046 INFO 23152 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 16:37:01,046 INFO 23152 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 16:37:08,958 INFO 12476 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 16:37:08,958 INFO 12476 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 16:37:08,958 INFO 12476 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 16:41:28,938 INFO 27976 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 16:41:28,938 INFO 27976 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 16:41:28,938 INFO 27976 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 16:41:42,019 INFO 28308 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 16:41:42,019 INFO 28308 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 16:41:42,019 INFO 28308 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 16:41:51,320 INFO 28028 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 16:41:51,320 INFO 28028 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 16:41:51,320 INFO 28028 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 16:45:20,864 INFO 25264 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 16:45:20,864 INFO 25264 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 16:45:20,864 INFO 25264 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 17:02:24,345 INFO 26808 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 17:02:24,346 INFO 26808 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 17:02:24,346 INFO 26808 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 17:02:44,332 INFO 12800 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 17:02:44,332 INFO 12800 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 17:02:44,332 INFO 12800 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 17:03:12,304 INFO 25312 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 17:03:12,304 INFO 25312 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 17:03:12,304 INFO 25312 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 17:03:37,257 INFO 23380 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 17:03:37,257 INFO 23380 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 17:03:37,257 INFO 23380 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 17:04:41,063 INFO 18584 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 17:04:41,063 INFO 18584 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 17:04:41,063 INFO 18584 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 17:06:33,958 INFO 28036 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 17:06:33,958 INFO 28036 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 17:06:33,958 INFO 28036 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 17:06:47,547 INFO 7200 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-06-16 17:06:47,547 INFO 7200 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-06-16 17:06:47,547 INFO 7200 [egg-schedule]: register schedule C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-06-16 23:59:59,727 INFO 7200 [Job#16238591997231159137717592001] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js executing by app
+2021-06-16 23:59:59,735 INFO 7200 [Job#16238591997231159137717592001] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js execute succeed, used 8ms. 
+2021-06-16 23:59:59,729 INFO 25104 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 86400275ms at 2021-06-18 00:00:00.004
+2021-06-17 00:00:00,722 INFO 7200 [Job#16238592007211159147692704001] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js executing by app
+2021-06-17 00:00:00,730 INFO 7200 [Job#16238592007211159147692704001] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js execute succeed, used 8ms. 
+2021-06-17 00:00:00,724 INFO 25104 [Timer] C:\Users\H2103671\Desktop\node\sequelize\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 86400279ms at 2021-06-18 00:00:01.003

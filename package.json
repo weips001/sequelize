@@ -1,0 +1,24 @@
+{
+  "name": "sequelize",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dayjs": "^1.10.5",
+    "egg": "^2.29.4",
+    "egg-sequelize": "^6.0.0",
+    "mysql2": "^2.2.5"
+  },
+  "scripts": {
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "ci": "eslint . && set NODE_ENV=test&& egg-bin cov",
+    "generate": "npx sequelize migration:generate --name=",
+    "migrate": "sequelize db:migrate"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.16.2",
+    "factory-girl": "^5.0.4",
+    "sequelize-cli": "^6.2.0"
+  }
+}
